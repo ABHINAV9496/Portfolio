@@ -28,6 +28,16 @@ export const scaleIn: Variants = {
   }),
 };
 
+export const iconPop: Variants = {
+  hidden: { opacity: 0, scale: 0, rotate: -180 },
+  show: (i: number = 0) => ({
+    opacity: 1,
+    scale: 1,
+    rotate: 0,
+    transition: { type: "spring", stiffness: 280, damping: 17, delay: i * 0.04 },
+  }),
+};
+
 export const slideLeft: Variants = {
   hidden: { opacity: 0, x: 48 },
   show: (i: number = 0) => ({
