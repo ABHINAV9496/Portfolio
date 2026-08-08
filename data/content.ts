@@ -7,6 +7,9 @@ export const profile = {
   phoneHref: "tel:+919496247873",
   linkedin: "https://www.linkedin.com/in/abhinav-a-934696202",
   github: "https://github.com/ABHINAV9496",
+  availability: "Open to remote · full-time roles",
+  heroLead:
+    "I'm Abhinav — a Python full-stack developer. I design clean REST APIs with Django & FastAPI, optimize Postgres and Redis performance, and ship real-time & AI-powered features from database schema to deployment.",
   summary:
     "Python Full-Stack Developer with expertise in building scalable, production-ready web applications using Django, FastAPI, PostgreSQL, Redis, Docker, AWS, and React.js. Experienced in designing high-performance REST APIs, geospatial services, real-time systems with WebSockets, secure authentication, AI-powered features, and cloud-native architectures.",
   roles: [
@@ -55,7 +58,6 @@ export const skillGroups: SkillGroup[] = [
       { name: "Vite", slug: "vite" },
       { name: "Tailwind CSS", slug: "tailwindcss" },
       { name: "Leaflet", slug: "leaflet" },
-      { name: "Recharts", fallback: "BarChart3" },
       { name: "Axios", slug: "axios" },
     ],
   },
@@ -67,10 +69,7 @@ export const skillGroups: SkillGroup[] = [
       { name: "Django REST Framework", slug: "django" },
       { name: "FastAPI", slug: "fastapi" },
       { name: "Celery", slug: "celery" },
-      { name: "Celery Beat", slug: "celery" },
       { name: "Django Channels", fallback: "Zap" },
-      { name: "WebSockets", fallback: "Wifi" },
-      { name: "Daphne", fallback: "Zap" },
     ],
   },
   {
@@ -81,7 +80,6 @@ export const skillGroups: SkillGroup[] = [
       { name: "PostGIS", slug: "postgresql" },
       { name: "pgvector", slug: "postgresql" },
       { name: "Redis", slug: "redis" },
-      { name: "GeoDjango", slug: "django" },
     ],
   },
   {
@@ -89,9 +87,7 @@ export const skillGroups: SkillGroup[] = [
     icon: "BrainCircuit",
     skills: [
       { name: "Groq / Llama 3.3", fallback: "Sparkles" },
-      { name: "SentenceTransformers", fallback: "BrainCircuit" },
       { name: "pgvector (RAG)", slug: "postgresql" },
-      { name: "Prompt Engineering", fallback: "MessageSquareText" },
     ],
   },
   {
@@ -100,7 +96,6 @@ export const skillGroups: SkillGroup[] = [
     skills: [
       { name: "Docker", slug: "docker" },
       { name: "AWS EC2", fallback: "Cloud" },
-      { name: "AWS RDS", fallback: "Cloud" },
       { name: "GitHub Actions", slug: "githubactions" },
       { name: "Nginx", slug: "nginx" },
       { name: "Git", slug: "git" },
@@ -113,7 +108,6 @@ export const skillGroups: SkillGroup[] = [
       { name: "Swagger (drf-spectacular)", slug: "swagger" },
       { name: "Google OAuth", slug: "google" },
       { name: "Razorpay", slug: "razorpay" },
-      { name: "OSRM", fallback: "Route" },
       { name: "Postman", slug: "postman" },
     ],
   },
@@ -125,6 +119,7 @@ export type Experience = {
   location: string;
   period: string;
   current?: boolean;
+  kind?: "pre-software";
   highlights: string[];
 };
 
@@ -146,6 +141,7 @@ export const experience: Experience[] = [
     company: "Bajaj Auto Pvt Ltd",
     location: "Pune, India",
     period: "Dec 2021 — Dec 2022",
+    kind: "pre-software",
     highlights: [
       "Tracked production-line metrics and diagnosed mechanical faults in a high-volume manufacturing environment.",
     ],
@@ -159,6 +155,8 @@ export type Project = {
   github: string;
   stack: string[];
   highlights: string[];
+  image?: string;
+  caseStudy?: string;
 };
 
 export const projects: Project[] = [
@@ -168,6 +166,8 @@ export const projects: Project[] = [
       "Smart EV charging & trip planning platform with a concurrent-safe reservation engine and an AI copilot.",
     live: "https://ecocharge-nine.vercel.app",
     github: "https://github.com/ABHINAV9496/Ecocharge",
+    image: "/projects/ecocharge.png",
+    caseStudy: "/projects/ecocharge",
     stack: [
       "Django",
       "FastAPI",
@@ -199,6 +199,7 @@ export const projects: Project[] = [
       "Production e-commerce platform — a complete storefront and API deployed on AWS EC2 with RDS.",
     live: "https://crick-gear-ecommerce.vercel.app",
     github: "https://github.com/ABHINAV9496/CrickGear-Ecommerce",
+    image: "/projects/cricgear.png",
     stack: ["Django", "DRF", "PostgreSQL", "React.js", "AWS EC2", "AWS RDS", "JWT"],
     highlights: [
       "Full e-commerce backend deployed on AWS EC2 with PostgreSQL on RDS, independently configuring all infrastructure (security groups, environment settings).",

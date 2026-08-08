@@ -1,58 +1,30 @@
 "use client";
 
-import { useEffect, useState } from "react";
-import { motion, useReducedMotion } from "framer-motion";
-import { ArrowUpRight, Mail } from "lucide-react";
+import { motion } from "framer-motion";
+import { ArrowUpRight, Download, Mail } from "lucide-react";
 import { GithubIcon, LinkedinIcon } from "./icons";
 import { fadeUp, slideLeft, staggerContainer } from "@/components/animations";
-import { profile } from "@/data/content";
+import { profile, skillGroups } from "@/data/content";
+import { resolveSkillIcon } from "./skillIcons";
 import { useTypewriter } from "@/hooks/useTypewriter";
 
-const TERMINAL_LINES = [
-  { cmd: "whoami", out: "abhinav_a" },
-  {
-    cmd: "./stack --list",
-    out: "django · fastapi · react · postgresql · redis · docker",
-  },
-  { cmd: "./status --check", out: "open to opportunities · remote friendly" },
+const STACK_SHOWCASE = [
+  "Python",
+  "Django",
+  "FastAPI",
+  "PostgreSQL",
+  "Redis",
+  "Celery",
+  "Docker",
+  "React.js",
+  "Tailwind CSS",
 ];
 
-function TypedTerminal() {
-  const reduce = useReducedMotion();
-  const [state, setState] = useState<{
-    done: string[];
-    line: number;
-    chars: number;
-    finished: boolean;
-  }>({ done: [], line: 0, chars: 0, finished: false });
-
-  useEffect(() => {
-    if (reduce) {
-      setState({
-        done: TERMINAL_LINES.map((l) => l.cmd),
-        line: TERMINAL_LINES.length,
-        chars: 0,
-        finished: true,
-      });
-      return;
-    }
-    if (state.finished) return;
-    const timer = setTimeout(() => {
-      setState((cur) => {
-        if (cur.finished) return cur;
-        const line = TERMINAL_LINES[cur.line];
-        if (cur.chars < line.cmd.length) {
-          return { ...cur, chars: cur.chars + 1 };
-        }
-        const done = [...cur.done, line.cmd];
-        if (cur.line + 1 >= TERMINAL_LINES.length) {
-          return { done, line: cur.line + 1, chars: 0, finished: true };
-        }
-        return { done, line: cur.line + 1, chars: 0, finished: false };
-      });
-    }, 38);
-    return () => clearTimeout(timer);
-  }, [reduce, state.finished]);
+function StackShowcase() {
+  const tiles = skillGroups
+    .flatMap((group) => group.skills)
+    .filter((skill) => STACK_SHOWCASE.includes(skill.name))
+    .map((skill) => ({ skill, ...resolveSkillIcon(skill) }));
 
   return (
     <motion.div
@@ -65,55 +37,51 @@ function TypedTerminal() {
       <div className="card-glow overflow-hidden rounded-2xl">
         <div className="flex items-center gap-2 border-b border-border/70 bg-card/60 px-4 py-3">
           <span className="h-2.5 w-2.5 rounded-full bg-border" />
-          <span className="h-2.5 w-2.5 rounded-full bg-border" />
+          <span className="h-2.5 w-2.5 rounded-full bg-accent/70" />
           <span className="h-2.5 w-2.5 rounded-full bg-border" />
           <span className="ml-2 font-mono text-[11px] text-subtle">
-            abhinav@portfolio — zsh
+            abhinav_a · core stack
           </span>
         </div>
 
-        <div className="min-h-[224px] space-y-0.5 p-5 font-mono text-[13px] leading-relaxed">
-          {TERMINAL_LINES.map((line, i) => {
-            const isDone = i < state.line;
-            const isActive = i === state.line && !state.finished;
-            return (
-              <div key={i}>
-                {isDone ? (
-                  <>
-                    <div>
-                      <span className="text-accent">$</span> {line.cmd}
-                    </div>
-                    <div className="mb-1 text-secondary">▸ {line.out}</div>
-                  </>
-                ) : isActive ? (
-                  <div>
-                    <span className="text-accent">$</span>{" "}
-                    {line.cmd.slice(0, state.chars)}
-                    <span className="animate-caret ml-px inline-block h-[13px] w-[7px] translate-y-[2px] bg-accent" />
-                  </div>
-                ) : (
-                  <div className="text-secondary/30">$ {line.cmd}</div>
-                )}
-              </div>
-            );
-          })}
-          {state.finished ? (
-            <div>
-              <span className="text-accent">$</span>
-              <span className="animate-caret ml-px inline-block h-[13px] w-[7px] translate-y-[2px] bg-accent" />
-            </div>
-          ) : null}
-        </div>
+        <motion.div
+          variants={staggerContainer(0.05, 0.1)}
+          initial="hidden"
+          animate="show"
+          className="grid grid-cols-3 gap-3 p-6"
+        >
+          {tiles.map(({ skill, Icon, brand }, i) => (
+            <motion.div
+              key={skill.name}
+              variants={fadeUp}
+              custom={i}
+              className="group/tile flex h-[96px] flex-col items-center justify-center gap-2 rounded-2xl border border-border/60 bg-[#0D1733]/60 p-2 transition-colors duration-200 hover:border-accent/60"
+            >
+              <span
+                style={{ color: brand }}
+                className="grid place-items-center opacity-75 transition-opacity duration-200 group-hover/tile:opacity-100"
+              >
+                <Icon
+                  size={30}
+                  className="transition-transform duration-200 group-hover/tile:scale-110"
+                />
+              </span>
+              <span className="font-mono text-[10px] text-subtle transition-colors duration-200 group-hover/tile:text-primary">
+                {skill.name}
+              </span>
+            </motion.div>
+          ))}
+        </motion.div>
       </div>
 
       <div className="mt-4 flex items-center justify-between font-mono text-[11px] text-subtle">
-        <span>~/portfolio</span>
+        <span>~/kozhikode</span>
         <span className="flex items-center gap-1.5">
           <span className="relative flex h-1.5 w-1.5">
             <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-accent opacity-60" />
             <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-accent" />
           </span>
-          session active
+          open to work
         </span>
       </div>
     </motion.div>
@@ -138,15 +106,16 @@ export default function Hero() {
         >
           <motion.div
             variants={fadeUp}
-            className="inline-flex items-center gap-2 rounded-full border border-border/70 bg-card/40 px-4 py-1.5 font-mono text-xs text-secondary"
+            className="inline-flex flex-wrap items-center justify-center gap-x-2 gap-y-1 rounded-full border border-accent/40 bg-accent/10 px-4 py-2 font-mono text-xs text-primary lg:justify-start"
           >
             <span className="relative flex h-2 w-2">
               <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-accent opacity-60" />
               <span className="relative inline-flex h-2 w-2 rounded-full bg-accent" />
             </span>
-            <span>Available for opportunities</span>
+            <span className="font-semibold text-accent">{profile.availability}</span>
+            <span className="text-secondary">— available now</span>
             <span className="hidden text-border sm:inline">·</span>
-            <span className="hidden text-primary sm:inline">{profile.location}</span>
+            <span className="hidden text-secondary sm:inline">{profile.location}</span>
           </motion.div>
 
           <motion.p
@@ -193,7 +162,7 @@ export default function Hero() {
             custom={0.6}
             className="mx-auto mt-6 max-w-xl text-sm leading-relaxed text-secondary lg:mx-0 md:text-base"
           >
-            {profile.summary}
+            {profile.heroLead}
           </motion.p>
 
           <motion.div
@@ -216,6 +185,17 @@ export default function Hero() {
               className="group inline-flex items-center gap-2 rounded-full border border-border px-7 py-3 text-sm font-semibold text-primary transition-all duration-300 hover:-translate-y-1 hover:border-accent/70 hover:text-accent hover:shadow-[0_12px_36px_-14px_rgb(250_204_21_/_0.5)] active:scale-95"
             >
               Contact Me
+            </a>
+            <a
+              href="/resume.pdf"
+              download
+              className="group inline-flex items-center gap-2 rounded-full border border-border px-7 py-3 text-sm font-semibold text-primary transition-all duration-300 hover:-translate-y-1 hover:border-accent/70 hover:text-accent hover:shadow-[0_12px_36px_-14px_rgb(250_204_21_/_0.5)] active:scale-95"
+            >
+              <Download
+                size={16}
+                className="transition-transform group-hover:translate-y-0.5"
+              />
+              Download Resume
             </a>
           </motion.div>
 
@@ -252,13 +232,13 @@ export default function Hero() {
           </motion.div>
         </motion.div>
 
-        <TypedTerminal />
+        <StackShowcase />
       </div>
 
       <a
         href="#about"
         aria-label="Scroll to about section"
-        className="absolute bottom-8 left-1/2 -translate-x-1/2"
+        className="absolute bottom-8 left-1/2 hidden -translate-x-1/2 md:block"
       >
         <div className="flex h-10 w-6 justify-center rounded-full border-2 border-border pt-1.5 transition-colors hover:border-accent">
           <motion.span

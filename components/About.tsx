@@ -2,15 +2,14 @@
 
 /* eslint-disable react/no-unescaped-entities */
 
-import { BadgeCheck, Briefcase, MapPin } from "lucide-react";
+import { Briefcase, MapPin } from "lucide-react";
 import Section from "./Section";
 import SectionHeading from "./SectionHeading";
 import Reveal from "./Reveal";
 import { profile } from "@/data/content";
 
 const facts = [
-  { icon: MapPin, label: "Based in", value: "Kozhikode, India" },
-  { icon: BadgeCheck, label: "Status", value: "Open to opportunities" },
+  { icon: MapPin, label: "Based in", value: profile.location },
   { icon: Briefcase, label: "Currently", value: "Bridgeon Solutions" },
 ];
 
@@ -27,12 +26,20 @@ export default function About() {
 
       <div className="grid items-start gap-10 lg:grid-cols-[1.1fr_1fr]">
         <Reveal>
-          <p className="leading-relaxed text-secondary">{profile.summary}</p>
+          <p className="leading-relaxed text-secondary">
+            I didn&apos;t start in software. I started on the production floor —
+            a mechanical engineering trainee at Bajaj Auto in Pune, tracking
+            line metrics and diagnosing faults in a high-volume manufacturing
+            environment. What that taught me: systems break in predictable
+            ways, and the fix is usually discipline, not heroics.
+          </p>
           <p className="mt-4 leading-relaxed text-secondary">
-            Currently building at Bridgeon Solutions — designing REST APIs,
-            optimizing query performance with eager-loading strategies, and
-            shipping real-time features end-to-end. I care about clean API
-            contracts, well-tested code, and systems that scale without drama.
+            That mindset carried straight into code. Today I build production
+            systems at Bridgeon Solutions — designing REST APIs with clean
+            contracts, eliminating N+1 queries with eager-loading strategies,
+            and shipping real-time features end-to-end. My bar is simple:
+            well-tested code, clear contracts, and systems that scale without
+            drama.
           </p>
           <div className="mt-6 flex flex-wrap gap-2">
             {facts.map((fact) => {
@@ -48,7 +55,7 @@ export default function About() {
         </Reveal>
 
         <Reveal delay={1}>
-          <div className="glass rounded-2xl p-5 font-mono text-[13px] leading-relaxed">
+          <div className="glass rounded-2xl p-5 font-mono text-[12px] leading-relaxed sm:text-[13px]">
             <div className="mb-3 flex items-center gap-2 border-b border-border/70 pb-3 text-xs text-subtle">
               <span className="h-2.5 w-2.5 rounded-full bg-border" />
               <span className="h-2.5 w-2.5 rounded-full bg-accent/70" />
@@ -57,50 +64,56 @@ export default function About() {
             </div>
             <div>
               <span className="text-accent">class</span>{" "}
-              <span className="text-primary">FullStackDeveloper:</span>
+              <span className="text-primary">AboutMe:</span>
             </div>
             <div className="mt-2">
-              {"    stack = ["}
-              <span className="text-accent">"Python"</span>,{" "}
-              <span className="text-accent">"Django"</span>,{" "}
-              <span className="text-accent">"FastAPI"</span>
-              {"]"}
+              {"    name = "}
+              <span className="text-accent">"Abhinav A"</span>
             </div>
             <div>
-              {"    db = ["}
-              <span className="text-accent">"PostgreSQL"</span>,{" "}
-              <span className="text-accent">"PostGIS"</span>,{" "}
-              <span className="text-accent">"Redis"</span>
-              {"]"}
+              {"    path = "}
+              <span className="text-accent">"mechanical → software"</span>
+            </div>
+            <div className="mt-2">
+              {"    clean_code = "}
+              <span className="text-accent">True</span>{" "}
+              <span className="text-secondary">
+                {"# contracts first, side effects last"}
+              </span>
             </div>
             <div>
-              {"    realtime = "}
-              <span className="text-accent">True</span>
-              {"  # WebSockets + Channels"}
+              {"    tests_before_ship = "}
+              <span className="text-accent">True</span>{" "}
+              <span className="text-secondary">
+                {"# break it in CI, not in prod"}
+              </span>
             </div>
             <div>
-              {"    cloud = ["}
-              <span className="text-accent">"Docker"</span>,{" "}
-              <span className="text-accent">"AWS"</span>,{" "}
-              <span className="text-accent">"Nginx"</span>
-              {"]"}
+              {"    scales_without_drama = "}
+              <span className="text-accent">True</span>{" "}
+              <span className="text-secondary">
+                {"# eager-load, cache, then repeat"}
+              </span>
+            </div>
+            <div className="mt-2">
+              {"    domain = {"}
+              <span className="text-accent">"ev"</span>,{" "}
+              <span className="text-accent">"geospatial"</span>,{" "}
+              <span className="text-accent">"ai"</span>
+              {"}"}
             </div>
             <div className="mt-2">
               {"    def "}
-              <span className="text-accent">build</span>(self, scale) -&gt;{" "}
-              <span className="text-primary">App</span>:
+              <span className="text-accent">build</span>(self, problem) -&gt;{" "}
+              <span className="text-primary">Solution</span>:
             </div>
             <div className="text-secondary">
-              {"        # production-ready, tested, well-typed"}
+              {"        \"\"\"Read the domain, design the contract, ship the tests.\"\"\""}
             </div>
             <div>
               {"        return "}
-              <span className="text-primary">App</span>(secure=, fast=)
-            </div>
-            <div className="mt-2">
-              {"    location = "}
-              <span className="text-accent">"Kozhikode, India"</span>{" "}
-              <span className="text-secondary"># open to remote</span>
+              <span className="text-primary">Solution</span>(clean=, tested=,
+              on_time=)
             </div>
           </div>
         </Reveal>

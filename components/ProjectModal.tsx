@@ -2,7 +2,8 @@
 
 import { useEffect } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import { ArrowUpRight, CheckCircle2, X } from "lucide-react";
+import Link from "next/link";
+import { ArrowRight, ArrowUpRight, CheckCircle2, X } from "lucide-react";
 import { GithubIcon } from "./icons";
 import type { Project } from "@/data/content";
 
@@ -97,6 +98,15 @@ export default function ProjectModal({
                 <GithubIcon size={15} />
                 Source code
               </a>
+              {project.caseStudy ? (
+                <Link
+                  href={project.caseStudy}
+                  className="inline-flex items-center gap-2 rounded-full border border-accent/60 px-5 py-2.5 text-sm font-semibold text-accent transition-colors hover:bg-accent/10"
+                >
+                  Read case study
+                  <ArrowRight size={15} />
+                </Link>
+              ) : null}
             </div>
           </motion.div>
         </motion.div>
