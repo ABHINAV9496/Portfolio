@@ -113,7 +113,7 @@ export default function Hero() {
               <span className="relative inline-flex h-2 w-2 rounded-full bg-accent" />
             </span>
             <span className="font-semibold text-accent">{profile.availability}</span>
-            <span className="text-secondary">— available now</span>
+            <span className="text-secondary">— Available Now</span>
             <span className="hidden text-border sm:inline">·</span>
             <span className="hidden text-secondary sm:inline">{profile.location}</span>
           </motion.div>
@@ -123,7 +123,7 @@ export default function Hero() {
             custom={0.2}
             className="mt-7 font-mono text-sm text-accent"
           >
-            &gt; hello, my name is
+            &gt; Hello, My Name Is
           </motion.p>
 
           <motion.h1
