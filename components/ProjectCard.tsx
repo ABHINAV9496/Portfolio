@@ -1,8 +1,7 @@
 "use client";
 
-import { useRef, useState } from "react";
+import { useRef } from "react";
 import { motion, useMotionValue, useSpring } from "framer-motion";
-import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, ArrowUpRight, FolderGit2, Layers } from "lucide-react";
 import { GithubIcon } from "./icons";
@@ -19,7 +18,6 @@ export default function ProjectCard({
   onOpen: () => void;
 }) {
   const ref = useRef<HTMLDivElement>(null);
-  const [imgFailed, setImgFailed] = useState(false);
   const rotateX = useSpring(useMotionValue(0), { stiffness: 180, damping: 18 });
   const rotateY = useSpring(useMotionValue(0), { stiffness: 180, damping: 18 });
 
@@ -54,19 +52,6 @@ export default function ProjectCard({
         style={{ rotateX, rotateY, transformStyle: "preserve-3d" }}
         className="card-glow group flex h-full flex-col rounded-3xl p-6"
       >
-        {project.image && !imgFailed ? (
-          <div className="relative mb-5 h-44 overflow-hidden rounded-2xl border border-border/60">
-            <Image
-              src={project.image}
-              alt={`${project.title} screenshot`}
-              fill
-              sizes="(max-width: 768px) 100vw, 50vw"
-              onError={() => setImgFailed(true)}
-              className="object-cover transition-transform duration-500 group-hover:scale-105"
-            />
-          </div>
-        ) : null}
-
         <div className="flex items-start justify-between">
           <span className="grid h-12 w-12 place-items-center rounded-2xl bg-accent/10 text-accent">
             <FolderGit2 size={22} />
