@@ -7,7 +7,7 @@ export const profile = {
   phoneHref: "tel:+919496247873",
   linkedin: "https://www.linkedin.com/in/abhinav-a-934696202",
   github: "https://github.com/ABHINAV9496",
-  availability: "Open to remote · Full-time roles",
+  availability: "Open to full-time roles and freelance opportunities.",
   heroLead:
     "I'm Abhinav — a Python full-stack developer. I design clean REST APIs with Django & FastAPI, optimize Postgres and Redis performance, and ship real-time & AI-powered features from database schema to deployment.",
   summary:
