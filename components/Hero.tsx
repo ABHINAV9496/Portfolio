@@ -40,7 +40,7 @@ function StackShowcase() {
           <span className="h-2.5 w-2.5 rounded-full bg-accent/70" />
           <span className="h-2.5 w-2.5 rounded-full bg-border" />
           <span className="ml-2 font-mono text-[11px] text-subtle">
-            abhinav_a · core stack
+           Core Stack
           </span>
         </div>
 
@@ -75,7 +75,7 @@ function StackShowcase() {
       </div>
 
       <div className="mt-4 flex items-center justify-between font-mono text-[11px] text-subtle">
-        <span>~/kozhikode</span>
+        <span>~/Kozhikode</span>
         <span className="flex items-center gap-1.5">
           <span className="relative flex h-1.5 w-1.5">
             <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-accent opacity-60" />
@@ -115,7 +115,7 @@ export default function Hero() {
             <span className="font-semibold text-accent">{profile.availability}</span>
             <span className="text-secondary">— Available Now</span>
             <span className="hidden text-border sm:inline">·</span>
-            <span className="hidden text-secondary sm:inline">{profile.location}</span>
+            <span className="hidden text-secondary sm:inline">Kozhikode,Kerala,India</span>
           </motion.div>
 
           <motion.p
