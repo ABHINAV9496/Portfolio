@@ -150,9 +150,11 @@ export const experience: Experience[] = [
 
 export type Project = {
   title: string;
+  slug: string;
   tagline: string;
-  live: string;
+  live?: string;
   github: string;
+  badge?: string;
   stack: string[];
   highlights: string[];
   image?: string;
@@ -161,7 +163,38 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+    title: "Skyrict",
+    slug: "skyrict",
+    tagline:
+      "AI-native, multi-tenant ERP platform — identity, operations, finance, and an AI agent core in one event-driven monorepo, built by a 4-person team.",
+    github: "https://github.com/nkswalih/skyrict",
+    live: "https://skyrict.in/",
+    badge: "Group Project",
+    image: "/projects/skyrict.png",
+    caseStudy: "/projects/skyrict",
+    stack: [
+      "FastAPI",
+      "SQLAlchemy 2.0",
+      "PostgreSQL 16",
+      "RLS",
+      "Redis",
+      "Next.js 15",
+      "React 19",
+      "shadcn/ui",
+      "Docker",
+      "GitHub Actions",
+    ],
+    highlights: [
+      "Multi-tenant ERP where every query is scoped to the current tenant via PostgreSQL Row-Level Security (SET app.current_tenant_id) and cross-checked against the JWT tenant_id claim — no bypass path.",
+      "Monorepo of three FastAPI services (identity with JWT, MFA/TOTP and audit; core ERP covering inventory, CRM, sales, finance, HR and payroll; provider-agnostic AI agent) behind a Next.js 15 BFF with 3+ services and shared packages.",
+      "AI-powered operations: natural-language inventory queries, restock suggestions, and stock anomaly detection against any OpenAI-compatible endpoint (OpenRouter, Groq, Ollama), egressed through core so permissions are enforced before the BFF forwards.",
+      "Event-driven by contract (identity.user.created, finance.journal_entry.posted) with the Kafka bus deliberately deferred until 3+ services actually need decoupled async events.",
+      "Team engineering process: PR-based workflow with CODEOWNERS review routing, path-filtered GitHub Actions CI, pre-commit hooks, gitleaks secret scanning, and Playwright E2E suites covering tenant isolation and token reuse.",
+    ],
+  },
+  {
     title: "EcoCharge",
+    slug: "ecocharge",
     tagline:
       "Smart EV charging & trip planning platform with a concurrent-safe reservation engine and an AI copilot.",
     live: "https://ecocharge-nine.vercel.app",
@@ -195,13 +228,22 @@ export const projects: Project[] = [
   },
   {
     title: "CricGear",
+    slug: "cricgear",
     tagline:
       "Production e-commerce platform — a complete storefront and API deployed on AWS EC2 with RDS.",
     live: "https://crick-gear-ecommerce.vercel.app",
     github: "https://github.com/ABHINAV9496/CrickGear-Ecommerce",
     image: "/projects/cricgear.png",
     caseStudy: "/projects/cricgear",
-    stack: ["Django", "DRF", "PostgreSQL", "React.js", "AWS EC2", "AWS RDS", "JWT"],
+    stack: [
+      "Django",
+      "DRF",
+      "PostgreSQL",
+      "React.js",
+      "AWS EC2",
+      "AWS RDS",
+      "JWT",
+    ],
     highlights: [
       "Full e-commerce backend deployed on AWS EC2 with PostgreSQL on RDS, independently configuring all infrastructure (security groups, environment settings).",
       "15+ REST endpoints with JWT auth, role-based access control, and field-level validation, verified end-to-end via Postman.",
