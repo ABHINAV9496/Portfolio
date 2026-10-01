@@ -2,7 +2,7 @@ import { existsSync } from "fs";
 import { join } from "path";
 import Link from "next/link";
 import Image from "next/image";
-import { ArrowLeft, ArrowUpRight, CheckCircle2 } from "lucide-react";
+import { ArrowLeft, ArrowUpRight, CheckCircle2, Users } from "lucide-react";
 import { GithubIcon } from "@/components/icons";
 import type { Project } from "@/data/content";
 
@@ -43,19 +43,27 @@ export default function CaseStudy({
           <h1 className="mt-3 text-4xl font-bold tracking-tight sm:text-5xl">
             {project.title}
           </h1>
+          {project.badge ? (
+            <span className="mt-4 inline-flex items-center gap-1.5 rounded-full border border-accent/40 bg-accent/10 px-3 py-1 font-mono text-xs leading-5 text-accent">
+              <Users size={13} />
+              {project.badge}
+            </span>
+          ) : null}
           <p className="mt-4 max-w-2xl text-base leading-relaxed text-secondary">
             {project.tagline}
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
-            <a
-              href={project.live}
-              target="_blank"
-              rel="noreferrer"
-              className="btn-shine inline-flex items-center gap-2 rounded-full bg-accent px-6 py-3 text-sm font-semibold text-navy shadow-glow-sm transition-transform hover:scale-105 active:scale-95"
-            >
-              Live demo
-              <ArrowUpRight size={16} />
-            </a>
+            {project.live ? (
+              <a
+                href={project.live}
+                target="_blank"
+                rel="noreferrer"
+                className="btn-shine inline-flex items-center gap-2 rounded-full bg-accent px-6 py-3 text-sm font-semibold text-navy shadow-glow-sm transition-transform hover:scale-105 active:scale-95"
+              >
+                Live demo
+                <ArrowUpRight size={16} />
+              </a>
+            ) : null}
             <a
               href={project.github}
               target="_blank"
@@ -73,7 +81,10 @@ export default function CaseStudy({
           <h2 className="mt-2 text-2xl font-semibold">The problem</h2>
           <div className="mt-4 space-y-4">
             {problem.map((paragraph) => (
-              <p key={paragraph.slice(0, 40)} className="max-w-3xl leading-relaxed text-secondary">
+              <p
+                key={paragraph.slice(0, 40)}
+                className="max-w-3xl leading-relaxed text-secondary"
+              >
                 {paragraph}
               </p>
             ))}
@@ -86,8 +97,12 @@ export default function CaseStudy({
           <div className="mt-6 grid gap-4 md:grid-cols-2">
             {architecture.map((card) => (
               <div key={card.title} className="glass rounded-2xl p-6">
-                <h3 className="text-sm font-semibold text-accent">{card.title}</h3>
-                <p className="mt-2 text-sm leading-relaxed text-secondary">{card.body}</p>
+                <h3 className="text-sm font-semibold text-accent">
+                  {card.title}
+                </h3>
+                <p className="mt-2 text-sm leading-relaxed text-secondary">
+                  {card.body}
+                </p>
               </div>
             ))}
           </div>
@@ -105,14 +120,21 @@ export default function CaseStudy({
 
         <section className="mt-16">
           <p className="font-mono text-xs text-accent">03 · key decisions</p>
-          <h2 className="mt-2 text-2xl font-semibold">The calls that shaped it</h2>
+          <h2 className="mt-2 text-2xl font-semibold">
+            The calls that shaped it
+          </h2>
           <ul className="mt-6 space-y-4">
             {decisions.map((item) => (
               <li key={item.title} className="flex gap-3">
-                <CheckCircle2 size={18} className="mt-0.5 shrink-0 text-accent" />
+                <CheckCircle2
+                  size={18}
+                  className="mt-0.5 shrink-0 text-accent"
+                />
                 <div>
                   <h3 className="text-sm font-semibold">{item.title}</h3>
-                  <p className="mt-1 text-sm leading-relaxed text-secondary">{item.body}</p>
+                  <p className="mt-1 text-sm leading-relaxed text-secondary">
+                    {item.body}
+                  </p>
                 </div>
               </li>
             ))}
@@ -121,14 +143,21 @@ export default function CaseStudy({
 
         <section className="mt-16">
           <p className="font-mono text-xs text-accent">04 · challenges</p>
-          <h2 className="mt-2 text-2xl font-semibold">Where it could have broken</h2>
+          <h2 className="mt-2 text-2xl font-semibold">
+            Where it could have broken
+          </h2>
           <ul className="mt-6 space-y-4">
             {challenges.map((item) => (
               <li key={item.title} className="flex gap-3">
-                <CheckCircle2 size={18} className="mt-0.5 shrink-0 text-accent" />
+                <CheckCircle2
+                  size={18}
+                  className="mt-0.5 shrink-0 text-accent"
+                />
                 <div>
                   <h3 className="text-sm font-semibold">{item.title}</h3>
-                  <p className="mt-1 text-sm leading-relaxed text-secondary">{item.body}</p>
+                  <p className="mt-1 text-sm leading-relaxed text-secondary">
+                    {item.body}
+                  </p>
                 </div>
               </li>
             ))}
@@ -154,7 +183,9 @@ export default function CaseStudy({
                 <span className="font-mono text-xs uppercase tracking-widest">
                   screenshot coming soon
                 </span>
-                <span className="text-xs">drop it at /public{project.image}</span>
+                <span className="text-xs">
+                  drop it at /public{project.image}
+                </span>
               </div>
             )}
           </section>
@@ -165,7 +196,10 @@ export default function CaseStudy({
           <h2 className="mt-2 text-2xl font-semibold">The numbers</h2>
           <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
             {metrics.map((metric) => (
-              <div key={metric.label} className="card-glow rounded-2xl p-6 text-center">
+              <div
+                key={metric.label}
+                className="card-glow rounded-2xl p-6 text-center"
+              >
                 <p className="text-4xl font-bold text-accent">{metric.value}</p>
                 <p className="mt-2 text-xs text-secondary">{metric.label}</p>
               </div>
