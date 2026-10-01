@@ -20,7 +20,7 @@ export default function Projects() {
         description="Production-minded builds — end-to-end systems from database to deployment."
       />
 
-      <div className="grid gap-6 md:grid-cols-2">
+      <div className="flex flex-wrap justify-center gap-6">
         {projects.map((project, i) => (
           <ProjectCard
             key={project.title}

@@ -3,7 +3,7 @@
 import { useEffect } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import Link from "next/link";
-import { ArrowRight, ArrowUpRight, CheckCircle2, X } from "lucide-react";
+import { ArrowRight, ArrowUpRight, CheckCircle2, Users, X } from "lucide-react";
 import { GithubIcon } from "./icons";
 import type { Project } from "@/data/content";
 
@@ -57,6 +57,12 @@ export default function ProjectModal({
             </button>
 
             <h3 className="pr-10 text-2xl font-bold">{project.title}</h3>
+            {project.badge ? (
+              <span className="mt-2 inline-flex items-center gap-1.5 rounded-full border border-accent/40 bg-accent/10 px-2.5 py-0.5 font-mono text-[11px] leading-5 text-accent">
+                <Users size={12} />
+                {project.badge}
+              </span>
+            ) : null}
             <p className="mt-2 text-sm text-secondary">{project.tagline}</p>
 
             <div className="mt-4 flex flex-wrap gap-2">
@@ -72,23 +78,31 @@ export default function ProjectModal({
 
             <ul className="mt-6 space-y-3">
               {project.highlights.map((highlight) => (
-                <li key={highlight} className="flex gap-3 text-sm leading-relaxed text-secondary">
-                  <CheckCircle2 size={16} className="mt-0.5 shrink-0 text-accent" />
+                <li
+                  key={highlight}
+                  className="flex gap-3 text-sm leading-relaxed text-secondary"
+                >
+                  <CheckCircle2
+                    size={16}
+                    className="mt-0.5 shrink-0 text-accent"
+                  />
                   <span>{highlight}</span>
                 </li>
               ))}
             </ul>
 
             <div className="mt-8 flex flex-wrap gap-3">
-              <a
-                href={project.live}
-                target="_blank"
-                rel="noreferrer"
-                className="btn-shine inline-flex items-center gap-2 rounded-full bg-accent px-5 py-2.5 text-sm font-semibold text-navy transition-transform hover:scale-105"
-              >
-                Live demo
-                <ArrowUpRight size={15} />
-              </a>
+              {project.live ? (
+                <a
+                  href={project.live}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="btn-shine inline-flex items-center gap-2 rounded-full bg-accent px-5 py-2.5 text-sm font-semibold text-navy transition-transform hover:scale-105"
+                >
+                  Live demo
+                  <ArrowUpRight size={15} />
+                </a>
+              ) : null}
               <a
                 href={project.github}
                 target="_blank"

@@ -3,7 +3,13 @@
 import { useRef } from "react";
 import { motion, useMotionValue, useSpring } from "framer-motion";
 import Link from "next/link";
-import { ArrowRight, ArrowUpRight, FolderGit2, Layers } from "lucide-react";
+import {
+  ArrowRight,
+  ArrowUpRight,
+  FolderGit2,
+  Layers,
+  Users,
+} from "lucide-react";
 import { GithubIcon } from "./icons";
 import { fadeUp, viewportOnce } from "@/components/animations";
 import type { Project } from "@/data/content";
@@ -44,6 +50,7 @@ export default function ProjectCard({
       whileInView="show"
       viewport={viewportOnce}
       style={{ perspective: 1000 }}
+      className="w-full md:w-[calc(50%-0.75rem)]"
     >
       <motion.div
         ref={ref}
@@ -57,20 +64,22 @@ export default function ProjectCard({
             <FolderGit2 size={22} />
           </span>
           <div className="flex items-center gap-2">
-            <a
-              href={project.live}
-              target="_blank"
-              rel="noreferrer"
-              aria-label={`${project.title} live demo`}
-              className="inline-flex items-center gap-1.5 rounded-full bg-accent px-3 py-1.5 text-[11px] font-semibold text-navy shadow-glow-sm transition-transform duration-300 hover:scale-105 active:scale-95"
-            >
-              <span className="relative flex h-1.5 w-1.5">
-                <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-navy/60" />
-                <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-navy" />
-              </span>
-              Live demo
-              <ArrowUpRight size={12} />
-            </a>
+            {project.live ? (
+              <a
+                href={project.live}
+                target="_blank"
+                rel="noreferrer"
+                aria-label={`${project.title} live demo`}
+                className="inline-flex items-center gap-1.5 rounded-full bg-accent px-3 py-1.5 text-[11px] font-semibold text-navy shadow-glow-sm transition-transform duration-300 hover:scale-105 active:scale-95"
+              >
+                <span className="relative flex h-1.5 w-1.5">
+                  <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-navy/60" />
+                  <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-navy" />
+                </span>
+                Live demo
+                <ArrowUpRight size={12} />
+              </a>
+            ) : null}
             <a
               href={project.github}
               target="_blank"
@@ -84,6 +93,12 @@ export default function ProjectCard({
         </div>
 
         <h3 className="mt-5 text-xl font-semibold">{project.title}</h3>
+        {project.badge ? (
+          <span className="mt-2 inline-flex w-fit items-center gap-1.5 rounded-full border border-accent/40 bg-accent/10 px-2.5 py-0.5 font-mono text-[11px] leading-5 text-accent">
+            <Users size={12} />
+            {project.badge}
+          </span>
+        ) : null}
         <p className="mt-2 flex-1 text-sm leading-relaxed text-secondary">
           {project.tagline}
         </p>
