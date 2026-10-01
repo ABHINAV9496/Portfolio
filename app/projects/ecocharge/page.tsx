@@ -8,7 +8,7 @@ export const metadata: Metadata = {
     "How EcoCharge solves EV trip planning: a concurrent-safe reservation engine, a geospatial data pipeline across 400+ cities, and an AI copilot served from a FastAPI microservice.",
 };
 
-const project = projects[0];
+const project = projects.find((p) => p.slug === "ecocharge")!;
 
 const problem = [
   "Charging is the bottleneck of any EV road trip. Drivers need to know where chargers exist, whether a slot is free, and whether the route ahead — given their vehicle's charging curve and the weather — is actually feasible. That demands trustworthy station data and a planner that reasons about energy, not just distance.",

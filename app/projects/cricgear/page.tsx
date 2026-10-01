@@ -8,7 +8,7 @@ export const metadata: Metadata = {
     "How CricGear ships a production e-commerce storefront and API — a Django + DRF backend on AWS EC2 with PostgreSQL on RDS, JWT auth and role-based access, served by a React.js frontend.",
 };
 
-const project = projects[1];
+const project = projects.find((p) => p.slug === "cricgear")!;
 
 const problem = [
   "E-commerce is unforgiving about the boring parts: authentication, authorization, and validation. A storefront needs a catalog, a cart, and an order flow that customers can trust — and the API behind it has to be secure enough to stand on a real server, not just a localhost demo.",
