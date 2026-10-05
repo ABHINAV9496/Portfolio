@@ -1,5 +1,20 @@
 import type { ComponentType } from "react";
-import { Cloud, Database, Sparkles, Zap } from "lucide-react";
+import {
+  Braces,
+  Cloud,
+  Database,
+  GitBranch,
+  KeyRound,
+  Lock,
+  Network,
+  Rocket,
+  Server,
+  Shield,
+  Sparkles,
+  Terminal,
+  Waypoints,
+  Zap,
+} from "lucide-react";
 import {
   SiAxios,
   SiCelery,
@@ -13,6 +28,7 @@ import {
   SiHtml5,
   SiJavascript,
   SiLeaflet,
+  SiNextdotjs,
   SiNginx,
   SiPostgresql,
   SiPostman,
@@ -22,6 +38,7 @@ import {
   SiRedis,
   SiSwagger,
   SiTailwindcss,
+  SiTypescript,
   SiVite,
 } from "react-icons/si";
 import type { Skill } from "@/data/content";
@@ -42,6 +59,7 @@ export const brandIcons: Record<string, SkillIconType> = {
   javascript: SiJavascript,
   leaflet: SiLeaflet,
   nginx: SiNginx,
+  nextjs: SiNextdotjs,
   postgresql: SiPostgresql,
   postman: SiPostman,
   python: SiPython,
@@ -50,13 +68,24 @@ export const brandIcons: Record<string, SkillIconType> = {
   redis: SiRedis,
   swagger: SiSwagger,
   tailwindcss: SiTailwindcss,
+  typescript: SiTypescript,
   vite: SiVite,
 };
 
 export const fallbackIcons: Record<string, SkillIconType> = {
+  Braces,
   Cloud,
   Database,
+  GitBranch,
+  KeyRound,
+  Lock,
+  Network,
+  Rocket,
+  Server,
+  Shield,
   Sparkles,
+  Terminal,
+  Waypoints,
   Zap,
 };
 
@@ -73,6 +102,7 @@ export const brandColors: Record<string, string> = {
   html5: "#E34F26",
   javascript: "#F7DF1E",
   leaflet: "#199900",
+  nextjs: "#000000",
   nginx: "#009639",
   postgresql: "#4169E1",
   postman: "#FF6C37",
@@ -82,6 +112,7 @@ export const brandColors: Record<string, string> = {
   redis: "#FF4438",
   swagger: "#85EA2D",
   tailwindcss: "#06B6D4",
+  typescript: "#3178C6",
   vite: "#646CFF",
 };
 
