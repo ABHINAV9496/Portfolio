@@ -76,7 +76,7 @@ export default function Skills() {
               initial="hidden"
               whileInView="show"
               viewport={viewportOnce}
-              className="grid grid-cols-3 gap-3 sm:grid-cols-4"
+              className="grid min-h-[196px] grid-cols-3 gap-3"
             >
               {group.skills.map((skill, i) => (
                 <SkillCard key={skill.name} skill={skill} index={i} />

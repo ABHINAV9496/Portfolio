@@ -70,10 +70,7 @@ export const skillGroups: SkillGroup[] = [
       { name: "FastAPI", slug: "fastapi" },
       { name: "SQLAlchemy", fallback: "Database" },
       { name: "Celery", slug: "celery" },
-      { name: "Django Channels", fallback: "Zap" },
-      { name: "Microservices", fallback: "Server" },
       { name: "WebSockets", fallback: "Waypoints" },
-      { name: "REST API Design", fallback: "Braces" },
     ],
   },
   {
@@ -112,8 +109,7 @@ export const skillGroups: SkillGroup[] = [
     icon: "CloudCog",
     skills: [
       { name: "Docker", slug: "docker" },
-      { name: "AWS EC2", fallback: "Cloud" },
-      { name: "AWS RDS", fallback: "Database" },
+      { name: "AWS (EC2, RDS)", fallback: "Cloud" },
       { name: "GitHub Actions", slug: "githubactions" },
       { name: "CI/CD", fallback: "Rocket" },
       { name: "Nginx", slug: "nginx" },
@@ -121,12 +117,15 @@ export const skillGroups: SkillGroup[] = [
     ],
   },
   {
-    title: "Tools",
-    icon: "Wrench",
+    title: "Tools & Architecture",
+    icon: "Boxes",
     skills: [
       { name: "Swagger (drf-spectacular)", slug: "swagger" },
       { name: "Razorpay", slug: "razorpay" },
       { name: "Postman", slug: "postman" },
+      { name: "Microservices", fallback: "Server" },
+      { name: "Django Channels", fallback: "Zap" },
+      { name: "REST API Design", fallback: "Braces" },
     ],
   },
 ];
