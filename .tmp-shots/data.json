@@ -1,0 +1,1729 @@
+{
+ "desktop": {
+  "rows": [
+   {
+    "label": "Languages",
+    "rowTop": 382.875,
+    "rowH": 89,
+    "rowBottom": 471.875,
+    "labelLeft": 144,
+    "labelCenterDelta": 0.5,
+    "gridLeft": 388,
+    "items": [
+     {
+      "name": "Python",
+      "top": 402.9,
+      "left": 388,
+      "h": 48,
+      "w": 215,
+      "tile": {
+       "w": 40,
+       "h": 40,
+       "radius": "10px",
+       "bg": "rgba(13, 23, 51, 0.6)",
+       "border": "rgba(37, 48, 100, 0.5)",
+       "bw": "1px"
+      },
+      "svgSize": 24,
+      "ink": {
+       "w": 24.1200008392334,
+       "h": 23.999998092651367
+      },
+      "nameSize": "16px",
+      "nameColor": "rgb(245, 243, 234)",
+      "nameWhite": "nowrap"
+     },
+     {
+      "name": "TypeScript",
+      "top": 402.9,
+      "left": 619,
+      "h": 48,
+      "w": 215,
+      "tile": {
+       "w": 40,
+       "h": 40,
+       "radius": "10px",
+       "bg": "rgba(13, 23, 51, 0.6)",
+       "border": "rgba(37, 48, 100, 0.5)",
+       "bw": "1px"
+      },
+      "svgSize": 24,
+      "ink": {
+       "w": 24,
+       "h": 24
+      },
+      "nameSize": "16px",
+      "nameColor": "rgb(245, 243, 234)",
+      "nameWhite": "nowrap"
+     },
+     {
+      "name": "JavaScript",
+      "top": 402.9,
+      "left": 850,
+      "h": 48,
+      "w": 215,
+      "tile": {
+       "w": 40,
+       "h": 40,
+       "radius": "10px",
+       "bg": "rgba(13, 23, 51, 0.6)",
+       "border": "rgba(37, 48, 100, 0.5)",
+       "bw": "1px"
+      },
+      "svgSize": 24,
+      "ink": {
+       "w": 24,
+       "h": 24
+      },
+      "nameSize": "16px",
+      "nameColor": "rgb(245, 243, 234)",
+      "nameWhite": "nowrap"
+     }
+    ],
+    "divider": "1px rgb(37, 48, 100)",
+    "align": "center"
+   },
+   {
+    "label": "Frontend",
+    "rowTop": 471.875,
+    "rowH": 89,
+    "rowBottom": 560.875,
+    "labelLeft": 144,
+    "labelCenterDelta": 0.5,
+    "gridLeft": 388,
+    "items": [
+     {
+      "name": "React.js",
+      "top": 491.9,
+      "left": 388,
+      "h": 48,
+      "w": 215,
+      "tile": {
+       "w": 40,
+       "h": 40,
+       "radius": "10px",
+       "bg": "rgba(13, 23, 51, 0.6)",
+       "border": "rgba(37, 48, 100, 0.5)",
+       "bw": "1px"
+      },
+      "svgSize": 24,
+      "ink": {
+       "w": 24,
+       "h": 21.375001907348633
+      },
+      "nameSize": "16px",
+      "nameColor": "rgb(245, 243, 234)",
+      "nameWhite": "nowrap"
+     },
+     {
+      "name": "Next.js",
+      "top": 491.9,
+      "left": 619,
+      "h": 48,
+      "w": 215,
+      "tile": {
+       "w": 40,
+       "h": 40,
+       "radius": "10px",
+       "bg": "rgba(13, 23, 51, 0.6)",
+       "border": "rgba(37, 48, 100, 0.5)",
+       "bw": "1px"
+      },
+      "svgSize": 24,
+      "ink": {
+       "w": 24,
+       "h": 24
+      },
+      "nameSize": "16px",
+      "nameColor": "rgb(245, 243, 234)",
+      "nameWhite": "nowrap"
+     },
+     {
+      "name": "Tailwind CSS",
+      "top": 491.9,
+      "left": 850,
+      "h": 48,
+      "w": 215,
+      "tile": {
+       "w": 40,
+       "h": 40,
+       "radius": "10px",
+       "bg": "rgba(13, 23, 51, 0.6)",
+       "border": "rgba(37, 48, 100, 0.5)",
+       "bw": "1px"
+      },
+      "svgSize": 30,
+      "ink": {
+       "w": 30,
+       "h": 17.999998331069946
+      },
+      "nameSize": "16px",
+      "nameColor": "rgb(245, 243, 234)",
+      "nameWhite": "nowrap"
+     }
+    ],
+    "divider": "1px rgb(37, 48, 100)",
+    "align": "center"
+   },
+   {
+    "label": "Backend",
+    "rowTop": 560.875,
+    "rowH": 89,
+    "rowBottom": 649.875,
+    "labelLeft": 144,
+    "labelCenterDelta": 0.5,
+    "gridLeft": 388,
+    "items": [
+     {
+      "name": "Django",
+      "top": 580.9,
+      "left": 388,
+      "h": 48,
+      "w": 215,
+      "tile": {
+       "w": 40,
+       "h": 40,
+       "radius": "10px",
+       "bg": "rgba(13, 23, 51, 0.6)",
+       "border": "rgba(37, 48, 100, 0.5)",
+       "bw": "1px"
+      },
+      "svgSize": 26,
+      "ink": {
+       "w": 20.180333614349365,
+       "h": 26
+      },
+      "nameSize": "16px",
+      "nameColor": "rgb(245, 243, 234)",
+      "nameWhite": "nowrap"
+     },
+     {
+      "name": "FastAPI",
+      "top": 580.9,
+      "left": 619,
+      "h": 48,
+      "w": 215,
+      "tile": {
+       "w": 40,
+       "h": 40,
+       "radius": "10px",
+       "bg": "rgba(13, 23, 51, 0.6)",
+       "border": "rgba(37, 48, 100, 0.5)",
+       "bw": "1px"
+      },
+      "svgSize": 24,
+      "ink": {
+       "w": 24,
+       "h": 23.92259979248047
+      },
+      "nameSize": "16px",
+      "nameColor": "rgb(245, 243, 234)",
+      "nameWhite": "nowrap"
+     },
+     {
+      "name": "Celery",
+      "top": 580.9,
+      "left": 850,
+      "h": 48,
+      "w": 215,
+      "tile": {
+       "w": 40,
+       "h": 40,
+       "radius": "10px",
+       "bg": "rgba(13, 23, 51, 0.6)",
+       "border": "rgba(37, 48, 100, 0.5)",
+       "bw": "1px"
+      },
+      "svgSize": 24,
+      "ink": {
+       "w": 24.000011444091797,
+       "h": 24.000011444091797
+      },
+      "nameSize": "16px",
+      "nameColor": "rgb(245, 243, 234)",
+      "nameWhite": "nowrap"
+     },
+     {
+      "name": "JWT",
+      "top": 580.9,
+      "left": 1081,
+      "h": 48,
+      "w": 215,
+      "tile": {
+       "w": 40,
+       "h": 40,
+       "radius": "10px",
+       "bg": "rgba(13, 23, 51, 0.6)",
+       "border": "rgba(37, 48, 100, 0.5)",
+       "bw": "1px"
+      },
+      "svgSize": 24,
+      "ink": {
+       "w": 23.95199966430664,
+       "h": 24
+      },
+      "nameSize": "16px",
+      "nameColor": "rgb(245, 243, 234)",
+      "nameWhite": "nowrap"
+     }
+    ],
+    "divider": "1px rgb(37, 48, 100)",
+    "align": "center"
+   },
+   {
+    "label": "Data & AI",
+    "rowTop": 649.875,
+    "rowH": 89,
+    "rowBottom": 738.875,
+    "labelLeft": 144,
+    "labelCenterDelta": 0.5,
+    "gridLeft": 388,
+    "items": [
+     {
+      "name": "PostgreSQL",
+      "top": 669.9,
+      "left": 388,
+      "h": 48,
+      "w": 215,
+      "tile": {
+       "w": 40,
+       "h": 40,
+       "radius": "10px",
+       "bg": "rgba(13, 23, 51, 0.6)",
+       "border": "rgba(37, 48, 100, 0.5)",
+       "bw": "1px"
+      },
+      "svgSize": 24,
+      "ink": {
+       "w": 23.1691837310791,
+       "h": 24.000003814697266
+      },
+      "nameSize": "16px",
+      "nameColor": "rgb(245, 243, 234)",
+      "nameWhite": "nowrap"
+     },
+     {
+      "name": "Redis",
+      "top": 669.9,
+      "left": 619,
+      "h": 48,
+      "w": 215,
+      "tile": {
+       "w": 40,
+       "h": 40,
+       "radius": "10px",
+       "bg": "rgba(13, 23, 51, 0.6)",
+       "border": "rgba(37, 48, 100, 0.5)",
+       "bw": "1px"
+      },
+      "svgSize": 24,
+      "ink": {
+       "w": 23.999717712402344,
+       "h": 22.145999908447266
+      },
+      "nameSize": "16px",
+      "nameColor": "rgb(245, 243, 234)",
+      "nameWhite": "nowrap"
+     },
+     {
+      "name": "SQLAlchemy",
+      "top": 669.9,
+      "left": 850,
+      "h": 48,
+      "w": 215,
+      "tile": {
+       "w": 40,
+       "h": 40,
+       "radius": "10px",
+       "bg": "rgba(13, 23, 51, 0.6)",
+       "border": "rgba(37, 48, 100, 0.5)",
+       "bw": "1px"
+      },
+      "svgSize": 36,
+      "ink": {
+       "w": 36.0000114440918,
+       "h": 12.42920207977295
+      },
+      "nameSize": "16px",
+      "nameColor": "rgb(245, 243, 234)",
+      "nameWhite": "nowrap"
+     },
+     {
+      "name": "LangGraph",
+      "top": 669.9,
+      "left": 1081,
+      "h": 48,
+      "w": 215,
+      "tile": {
+       "w": 40,
+       "h": 40,
+       "radius": "10px",
+       "bg": "rgba(13, 23, 51, 0.6)",
+       "border": "rgba(37, 48, 100, 0.5)",
+       "bw": "1px"
+      },
+      "svgSize": 28,
+      "ink": {
+       "w": 20.359498023986816,
+       "h": 28.000102361043297
+      },
+      "nameSize": "16px",
+      "nameColor": "rgb(245, 243, 234)",
+      "nameWhite": "nowrap"
+     }
+    ],
+    "divider": "1px rgb(37, 48, 100)",
+    "align": "center"
+   },
+   {
+    "label": "Cloud & DevOps",
+    "rowTop": 738.875,
+    "rowH": 89,
+    "rowBottom": 827.875,
+    "labelLeft": 144,
+    "labelCenterDelta": 0.5,
+    "gridLeft": 388,
+    "items": [
+     {
+      "name": "Docker",
+      "top": 758.9,
+      "left": 388,
+      "h": 48,
+      "w": 215,
+      "tile": {
+       "w": 40,
+       "h": 40,
+       "radius": "10px",
+       "bg": "rgba(13, 23, 51, 0.6)",
+       "border": "rgba(37, 48, 100, 0.5)",
+       "bw": "1px"
+      },
+      "svgSize": 28,
+      "ink": {
+       "w": 28.00002225240072,
+       "h": 20.09241803487142
+      },
+      "nameSize": "16px",
+      "nameColor": "rgb(245, 243, 234)",
+      "nameWhite": "nowrap"
+     },
+     {
+      "name": "AWS",
+      "top": 758.9,
+      "left": 619,
+      "h": 48,
+      "w": 215,
+      "tile": {
+       "w": 40,
+       "h": 40,
+       "radius": "10px",
+       "bg": "rgba(13, 23, 51, 0.6)",
+       "border": "rgba(37, 48, 100, 0.5)",
+       "bw": "1px"
+      },
+      "svgSize": 30,
+      "ink": {
+       "w": 30.000497817993164,
+       "h": 18.019640922546387
+      },
+      "nameSize": "16px",
+      "nameColor": "rgb(245, 243, 234)",
+      "nameWhite": "nowrap"
+     },
+     {
+      "name": "GitHub Actions",
+      "top": 758.9,
+      "left": 850,
+      "h": 48,
+      "w": 215,
+      "tile": {
+       "w": 40,
+       "h": 40,
+       "radius": "10px",
+       "bg": "rgba(13, 23, 51, 0.6)",
+       "border": "rgba(37, 48, 100, 0.5)",
+       "bw": "1px"
+      },
+      "svgSize": 24,
+      "ink": {
+       "w": 24,
+       "h": 24
+      },
+      "nameSize": "16px",
+      "nameColor": "rgb(245, 243, 234)",
+      "nameWhite": "nowrap"
+     },
+     {
+      "name": "Nginx",
+      "top": 758.9,
+      "left": 1081,
+      "h": 48,
+      "w": 215,
+      "tile": {
+       "w": 40,
+       "h": 40,
+       "radius": "10px",
+       "bg": "rgba(13, 23, 51, 0.6)",
+       "border": "rgba(37, 48, 100, 0.5)",
+       "bw": "1px"
+      },
+      "svgSize": 24,
+      "ink": {
+       "w": 20.790000915527344,
+       "h": 24
+      },
+      "nameSize": "16px",
+      "nameColor": "rgb(245, 243, 234)",
+      "nameWhite": "nowrap"
+     }
+    ],
+    "divider": "1px rgb(37, 48, 100)",
+    "align": "center"
+   },
+   {
+    "label": "Tools",
+    "rowTop": 827.875,
+    "rowH": 89,
+    "rowBottom": 916.875,
+    "labelLeft": 144,
+    "labelCenterDelta": 0.5,
+    "gridLeft": 388,
+    "items": [
+     {
+      "name": "Git",
+      "top": 847.9,
+      "left": 388,
+      "h": 48,
+      "w": 215,
+      "tile": {
+       "w": 40,
+       "h": 40,
+       "radius": "10px",
+       "bg": "rgba(13, 23, 51, 0.6)",
+       "border": "rgba(37, 48, 100, 0.5)",
+       "bw": "1px"
+      },
+      "svgSize": 24,
+      "ink": {
+       "w": 24.00022315979004,
+       "h": 24.00172233581543
+      },
+      "nameSize": "16px",
+      "nameColor": "rgb(245, 243, 234)",
+      "nameWhite": "nowrap"
+     },
+     {
+      "name": "GitHub",
+      "top": 847.9,
+      "left": 619,
+      "h": 48,
+      "w": 215,
+      "tile": {
+       "w": 40,
+       "h": 40,
+       "radius": "10px",
+       "bg": "rgba(13, 23, 51, 0.6)",
+       "border": "rgba(37, 48, 100, 0.5)",
+       "bw": "1px"
+      },
+      "svgSize": 24,
+      "ink": {
+       "w": 24,
+       "h": 23.405736923217773
+      },
+      "nameSize": "16px",
+      "nameColor": "rgb(245, 243, 234)",
+      "nameWhite": "nowrap"
+     },
+     {
+      "name": "Postman",
+      "top": 847.9,
+      "left": 850,
+      "h": 48,
+      "w": 215,
+      "tile": {
+       "w": 40,
+       "h": 40,
+       "radius": "10px",
+       "bg": "rgba(13, 23, 51, 0.6)",
+       "border": "rgba(37, 48, 100, 0.5)",
+       "bw": "1px"
+      },
+      "svgSize": 24,
+      "ink": {
+       "w": 23.99888038635254,
+       "h": 23.99962615966797
+      },
+      "nameSize": "16px",
+      "nameColor": "rgb(245, 243, 234)",
+      "nameWhite": "nowrap"
+     }
+    ],
+    "divider": "1px rgb(37, 48, 100)",
+    "align": "center"
+   }
+  ],
+  "strip": {
+   "tiles": 42,
+   "anim": "marquee",
+   "dur": "42s",
+   "tileW": 40,
+   "tileBg": "rgba(13, 23, 51, 0.6)"
+  },
+  "accentVar": "250 204 21"
+ },
+ "hover": {
+  "tileBorder": "rgb(250, 204, 21)",
+  "nameColor": "rgb(250, 204, 21)",
+  "transform": "none",
+  "noMovement": true
+ },
+ "reducedMotion": "1e-05s",
+ "tablet": {
+  "rows": [
+   {
+    "label": "Languages",
+    "rowTop": 382.6875,
+    "rowH": 149,
+    "rowBottom": 531.6875,
+    "labelLeft": 32,
+    "labelCenterDelta": 0.5,
+    "gridLeft": 276,
+    "items": [
+     {
+      "name": "Python",
+      "top": 402.7,
+      "left": 276,
+      "h": 48,
+      "w": 238,
+      "tile": {
+       "w": 40,
+       "h": 40,
+       "radius": "10px",
+       "bg": "rgba(13, 23, 51, 0.6)",
+       "border": "rgba(37, 48, 100, 0.5)",
+       "bw": "1px"
+      },
+      "svgSize": 24,
+      "ink": {
+       "w": 24.1200008392334,
+       "h": 23.999998092651367
+      },
+      "nameSize": "16px",
+      "nameColor": "rgb(245, 243, 234)",
+      "nameWhite": "nowrap"
+     },
+     {
+      "name": "TypeScript",
+      "top": 402.7,
+      "left": 530,
+      "h": 48,
+      "w": 238,
+      "tile": {
+       "w": 40,
+       "h": 40,
+       "radius": "10px",
+       "bg": "rgba(13, 23, 51, 0.6)",
+       "border": "rgba(37, 48, 100, 0.5)",
+       "bw": "1px"
+      },
+      "svgSize": 24,
+      "ink": {
+       "w": 24,
+       "h": 24
+      },
+      "nameSize": "16px",
+      "nameColor": "rgb(245, 243, 234)",
+      "nameWhite": "nowrap"
+     },
+     {
+      "name": "JavaScript",
+      "top": 462.7,
+      "left": 276,
+      "h": 48,
+      "w": 238,
+      "tile": {
+       "w": 40,
+       "h": 40,
+       "radius": "10px",
+       "bg": "rgba(13, 23, 51, 0.6)",
+       "border": "rgba(37, 48, 100, 0.5)",
+       "bw": "1px"
+      },
+      "svgSize": 24,
+      "ink": {
+       "w": 24,
+       "h": 24
+      },
+      "nameSize": "16px",
+      "nameColor": "rgb(245, 243, 234)",
+      "nameWhite": "nowrap"
+     }
+    ],
+    "divider": "1px rgb(37, 48, 100)",
+    "align": "center"
+   },
+   {
+    "label": "Frontend",
+    "rowTop": 531.6875,
+    "rowH": 149,
+    "rowBottom": 680.6875,
+    "labelLeft": 32,
+    "labelCenterDelta": 0.5,
+    "gridLeft": 276,
+    "items": [
+     {
+      "name": "React.js",
+      "top": 551.7,
+      "left": 276,
+      "h": 48,
+      "w": 238,
+      "tile": {
+       "w": 40,
+       "h": 40,
+       "radius": "10px",
+       "bg": "rgba(13, 23, 51, 0.6)",
+       "border": "rgba(37, 48, 100, 0.5)",
+       "bw": "1px"
+      },
+      "svgSize": 24,
+      "ink": {
+       "w": 24,
+       "h": 21.375001907348633
+      },
+      "nameSize": "16px",
+      "nameColor": "rgb(245, 243, 234)",
+      "nameWhite": "nowrap"
+     },
+     {
+      "name": "Next.js",
+      "top": 551.7,
+      "left": 530,
+      "h": 48,
+      "w": 238,
+      "tile": {
+       "w": 40,
+       "h": 40,
+       "radius": "10px",
+       "bg": "rgba(13, 23, 51, 0.6)",
+       "border": "rgba(37, 48, 100, 0.5)",
+       "bw": "1px"
+      },
+      "svgSize": 24,
+      "ink": {
+       "w": 24,
+       "h": 24
+      },
+      "nameSize": "16px",
+      "nameColor": "rgb(245, 243, 234)",
+      "nameWhite": "nowrap"
+     },
+     {
+      "name": "Tailwind CSS",
+      "top": 611.7,
+      "left": 276,
+      "h": 48,
+      "w": 238,
+      "tile": {
+       "w": 40,
+       "h": 40,
+       "radius": "10px",
+       "bg": "rgba(13, 23, 51, 0.6)",
+       "border": "rgba(37, 48, 100, 0.5)",
+       "bw": "1px"
+      },
+      "svgSize": 30,
+      "ink": {
+       "w": 30,
+       "h": 17.999998331069946
+      },
+      "nameSize": "16px",
+      "nameColor": "rgb(245, 243, 234)",
+      "nameWhite": "nowrap"
+     }
+    ],
+    "divider": "1px rgb(37, 48, 100)",
+    "align": "center"
+   },
+   {
+    "label": "Backend",
+    "rowTop": 680.6875,
+    "rowH": 149,
+    "rowBottom": 829.6875,
+    "labelLeft": 32,
+    "labelCenterDelta": 0.5,
+    "gridLeft": 276,
+    "items": [
+     {
+      "name": "Django",
+      "top": 700.7,
+      "left": 276,
+      "h": 48,
+      "w": 238,
+      "tile": {
+       "w": 40,
+       "h": 40,
+       "radius": "10px",
+       "bg": "rgba(13, 23, 51, 0.6)",
+       "border": "rgba(37, 48, 100, 0.5)",
+       "bw": "1px"
+      },
+      "svgSize": 26,
+      "ink": {
+       "w": 20.180333614349365,
+       "h": 26
+      },
+      "nameSize": "16px",
+      "nameColor": "rgb(245, 243, 234)",
+      "nameWhite": "nowrap"
+     },
+     {
+      "name": "FastAPI",
+      "top": 700.7,
+      "left": 530,
+      "h": 48,
+      "w": 238,
+      "tile": {
+       "w": 40,
+       "h": 40,
+       "radius": "10px",
+       "bg": "rgba(13, 23, 51, 0.6)",
+       "border": "rgba(37, 48, 100, 0.5)",
+       "bw": "1px"
+      },
+      "svgSize": 24,
+      "ink": {
+       "w": 24,
+       "h": 23.92259979248047
+      },
+      "nameSize": "16px",
+      "nameColor": "rgb(245, 243, 234)",
+      "nameWhite": "nowrap"
+     },
+     {
+      "name": "Celery",
+      "top": 760.7,
+      "left": 276,
+      "h": 48,
+      "w": 238,
+      "tile": {
+       "w": 40,
+       "h": 40,
+       "radius": "10px",
+       "bg": "rgba(13, 23, 51, 0.6)",
+       "border": "rgba(37, 48, 100, 0.5)",
+       "bw": "1px"
+      },
+      "svgSize": 24,
+      "ink": {
+       "w": 24.000011444091797,
+       "h": 24.000011444091797
+      },
+      "nameSize": "16px",
+      "nameColor": "rgb(245, 243, 234)",
+      "nameWhite": "nowrap"
+     },
+     {
+      "name": "JWT",
+      "top": 760.7,
+      "left": 530,
+      "h": 48,
+      "w": 238,
+      "tile": {
+       "w": 40,
+       "h": 40,
+       "radius": "10px",
+       "bg": "rgba(13, 23, 51, 0.6)",
+       "border": "rgba(37, 48, 100, 0.5)",
+       "bw": "1px"
+      },
+      "svgSize": 24,
+      "ink": {
+       "w": 23.95199966430664,
+       "h": 24
+      },
+      "nameSize": "16px",
+      "nameColor": "rgb(245, 243, 234)",
+      "nameWhite": "nowrap"
+     }
+    ],
+    "divider": "1px rgb(37, 48, 100)",
+    "align": "center"
+   },
+   {
+    "label": "Data & AI",
+    "rowTop": 829.6875,
+    "rowH": 149,
+    "rowBottom": 978.6875,
+    "labelLeft": 32,
+    "labelCenterDelta": 0.5,
+    "gridLeft": 276,
+    "items": [
+     {
+      "name": "PostgreSQL",
+      "top": 849.7,
+      "left": 276,
+      "h": 48,
+      "w": 238,
+      "tile": {
+       "w": 40,
+       "h": 40,
+       "radius": "10px",
+       "bg": "rgba(13, 23, 51, 0.6)",
+       "border": "rgba(37, 48, 100, 0.5)",
+       "bw": "1px"
+      },
+      "svgSize": 24,
+      "ink": {
+       "w": 23.1691837310791,
+       "h": 24.000003814697266
+      },
+      "nameSize": "16px",
+      "nameColor": "rgb(245, 243, 234)",
+      "nameWhite": "nowrap"
+     },
+     {
+      "name": "Redis",
+      "top": 849.7,
+      "left": 530,
+      "h": 48,
+      "w": 238,
+      "tile": {
+       "w": 40,
+       "h": 40,
+       "radius": "10px",
+       "bg": "rgba(13, 23, 51, 0.6)",
+       "border": "rgba(37, 48, 100, 0.5)",
+       "bw": "1px"
+      },
+      "svgSize": 24,
+      "ink": {
+       "w": 23.999717712402344,
+       "h": 22.145999908447266
+      },
+      "nameSize": "16px",
+      "nameColor": "rgb(245, 243, 234)",
+      "nameWhite": "nowrap"
+     },
+     {
+      "name": "SQLAlchemy",
+      "top": 909.7,
+      "left": 276,
+      "h": 48,
+      "w": 238,
+      "tile": {
+       "w": 40,
+       "h": 40,
+       "radius": "10px",
+       "bg": "rgba(13, 23, 51, 0.6)",
+       "border": "rgba(37, 48, 100, 0.5)",
+       "bw": "1px"
+      },
+      "svgSize": 36,
+      "ink": {
+       "w": 36.0000114440918,
+       "h": 12.42920207977295
+      },
+      "nameSize": "16px",
+      "nameColor": "rgb(245, 243, 234)",
+      "nameWhite": "nowrap"
+     },
+     {
+      "name": "LangGraph",
+      "top": 909.7,
+      "left": 530,
+      "h": 48,
+      "w": 238,
+      "tile": {
+       "w": 40,
+       "h": 40,
+       "radius": "10px",
+       "bg": "rgba(13, 23, 51, 0.6)",
+       "border": "rgba(37, 48, 100, 0.5)",
+       "bw": "1px"
+      },
+      "svgSize": 28,
+      "ink": {
+       "w": 20.359498023986816,
+       "h": 28.000102361043297
+      },
+      "nameSize": "16px",
+      "nameColor": "rgb(245, 243, 234)",
+      "nameWhite": "nowrap"
+     }
+    ],
+    "divider": "1px rgb(37, 48, 100)",
+    "align": "center"
+   },
+   {
+    "label": "Cloud & DevOps",
+    "rowTop": 978.6875,
+    "rowH": 149,
+    "rowBottom": 1127.6875,
+    "labelLeft": 32,
+    "labelCenterDelta": 0.5,
+    "gridLeft": 276,
+    "items": [
+     {
+      "name": "Docker",
+      "top": 998.7,
+      "left": 276,
+      "h": 48,
+      "w": 238,
+      "tile": {
+       "w": 40,
+       "h": 40,
+       "radius": "10px",
+       "bg": "rgba(13, 23, 51, 0.6)",
+       "border": "rgba(37, 48, 100, 0.5)",
+       "bw": "1px"
+      },
+      "svgSize": 28,
+      "ink": {
+       "w": 28.00002225240072,
+       "h": 20.09241803487142
+      },
+      "nameSize": "16px",
+      "nameColor": "rgb(245, 243, 234)",
+      "nameWhite": "nowrap"
+     },
+     {
+      "name": "AWS",
+      "top": 998.7,
+      "left": 530,
+      "h": 48,
+      "w": 238,
+      "tile": {
+       "w": 40,
+       "h": 40,
+       "radius": "10px",
+       "bg": "rgba(13, 23, 51, 0.6)",
+       "border": "rgba(37, 48, 100, 0.5)",
+       "bw": "1px"
+      },
+      "svgSize": 30,
+      "ink": {
+       "w": 30.000497817993164,
+       "h": 18.019640922546387
+      },
+      "nameSize": "16px",
+      "nameColor": "rgb(245, 243, 234)",
+      "nameWhite": "nowrap"
+     },
+     {
+      "name": "GitHub Actions",
+      "top": 1058.7,
+      "left": 276,
+      "h": 48,
+      "w": 238,
+      "tile": {
+       "w": 40,
+       "h": 40,
+       "radius": "10px",
+       "bg": "rgba(13, 23, 51, 0.6)",
+       "border": "rgba(37, 48, 100, 0.5)",
+       "bw": "1px"
+      },
+      "svgSize": 24,
+      "ink": {
+       "w": 24,
+       "h": 24
+      },
+      "nameSize": "16px",
+      "nameColor": "rgb(245, 243, 234)",
+      "nameWhite": "nowrap"
+     },
+     {
+      "name": "Nginx",
+      "top": 1058.7,
+      "left": 530,
+      "h": 48,
+      "w": 238,
+      "tile": {
+       "w": 40,
+       "h": 40,
+       "radius": "10px",
+       "bg": "rgba(13, 23, 51, 0.6)",
+       "border": "rgba(37, 48, 100, 0.5)",
+       "bw": "1px"
+      },
+      "svgSize": 24,
+      "ink": {
+       "w": 20.790000915527344,
+       "h": 24
+      },
+      "nameSize": "16px",
+      "nameColor": "rgb(245, 243, 234)",
+      "nameWhite": "nowrap"
+     }
+    ],
+    "divider": "1px rgb(37, 48, 100)",
+    "align": "center"
+   },
+   {
+    "label": "Tools",
+    "rowTop": 1127.6875,
+    "rowH": 149,
+    "rowBottom": 1276.6875,
+    "labelLeft": 32,
+    "labelCenterDelta": 0.5,
+    "gridLeft": 276,
+    "items": [
+     {
+      "name": "Git",
+      "top": 1147.7,
+      "left": 276,
+      "h": 48,
+      "w": 238,
+      "tile": {
+       "w": 40,
+       "h": 40,
+       "radius": "10px",
+       "bg": "rgba(13, 23, 51, 0.6)",
+       "border": "rgba(37, 48, 100, 0.5)",
+       "bw": "1px"
+      },
+      "svgSize": 24,
+      "ink": {
+       "w": 24.00022315979004,
+       "h": 24.00172233581543
+      },
+      "nameSize": "16px",
+      "nameColor": "rgb(245, 243, 234)",
+      "nameWhite": "nowrap"
+     },
+     {
+      "name": "GitHub",
+      "top": 1147.7,
+      "left": 530,
+      "h": 48,
+      "w": 238,
+      "tile": {
+       "w": 40,
+       "h": 40,
+       "radius": "10px",
+       "bg": "rgba(13, 23, 51, 0.6)",
+       "border": "rgba(37, 48, 100, 0.5)",
+       "bw": "1px"
+      },
+      "svgSize": 24,
+      "ink": {
+       "w": 24,
+       "h": 23.405736923217773
+      },
+      "nameSize": "16px",
+      "nameColor": "rgb(245, 243, 234)",
+      "nameWhite": "nowrap"
+     },
+     {
+      "name": "Postman",
+      "top": 1207.7,
+      "left": 276,
+      "h": 48,
+      "w": 238,
+      "tile": {
+       "w": 40,
+       "h": 40,
+       "radius": "10px",
+       "bg": "rgba(13, 23, 51, 0.6)",
+       "border": "rgba(37, 48, 100, 0.5)",
+       "bw": "1px"
+      },
+      "svgSize": 24,
+      "ink": {
+       "w": 23.99888038635254,
+       "h": 23.99962615966797
+      },
+      "nameSize": "16px",
+      "nameColor": "rgb(245, 243, 234)",
+      "nameWhite": "nowrap"
+     }
+    ],
+    "divider": "1px rgb(37, 48, 100)",
+    "align": "center"
+   }
+  ],
+  "strip": {
+   "tiles": 42,
+   "anim": "marquee",
+   "dur": "42s",
+   "tileW": 40,
+   "tileBg": "rgba(13, 23, 51, 0.6)"
+  },
+  "accentVar": "250 204 21"
+ },
+ "mobile": {
+  "rows": [
+   {
+    "label": "Languages",
+    "rowTop": 958.046875,
+    "rowH": 181,
+    "rowBottom": 1139.046875,
+    "labelLeft": 20,
+    "labelCenterDelta": 60.5,
+    "gridLeft": 20,
+    "items": [
+     {
+      "name": "Python",
+      "top": 1010,
+      "left": 20,
+      "h": 48,
+      "w": 172,
+      "tile": {
+       "w": 40,
+       "h": 40,
+       "radius": "10px",
+       "bg": "rgba(13, 23, 51, 0.6)",
+       "border": "rgba(37, 48, 100, 0.5)",
+       "bw": "1px"
+      },
+      "svgSize": 24,
+      "ink": {
+       "w": 24.1200008392334,
+       "h": 23.999998092651367
+      },
+      "nameSize": "16px",
+      "nameColor": "rgb(245, 243, 234)",
+      "nameWhite": "nowrap"
+     },
+     {
+      "name": "TypeScript",
+      "top": 1010,
+      "left": 208,
+      "h": 48,
+      "w": 172,
+      "tile": {
+       "w": 40,
+       "h": 40,
+       "radius": "10px",
+       "bg": "rgba(13, 23, 51, 0.6)",
+       "border": "rgba(37, 48, 100, 0.5)",
+       "bw": "1px"
+      },
+      "svgSize": 24,
+      "ink": {
+       "w": 24,
+       "h": 24
+      },
+      "nameSize": "16px",
+      "nameColor": "rgb(245, 243, 234)",
+      "nameWhite": "nowrap"
+     },
+     {
+      "name": "JavaScript",
+      "top": 1070,
+      "left": 20,
+      "h": 48,
+      "w": 172,
+      "tile": {
+       "w": 40,
+       "h": 40,
+       "radius": "10px",
+       "bg": "rgba(13, 23, 51, 0.6)",
+       "border": "rgba(37, 48, 100, 0.5)",
+       "bw": "1px"
+      },
+      "svgSize": 24,
+      "ink": {
+       "w": 24,
+       "h": 24
+      },
+      "nameSize": "16px",
+      "nameColor": "rgb(245, 243, 234)",
+      "nameWhite": "nowrap"
+     }
+    ],
+    "divider": "1px rgb(37, 48, 100)",
+    "align": "normal"
+   },
+   {
+    "label": "Frontend",
+    "rowTop": 1139.046875,
+    "rowH": 181,
+    "rowBottom": 1320.046875,
+    "labelLeft": 20,
+    "labelCenterDelta": 60.5,
+    "gridLeft": 20,
+    "items": [
+     {
+      "name": "React.js",
+      "top": 1191,
+      "left": 20,
+      "h": 48,
+      "w": 172,
+      "tile": {
+       "w": 40,
+       "h": 40,
+       "radius": "10px",
+       "bg": "rgba(13, 23, 51, 0.6)",
+       "border": "rgba(37, 48, 100, 0.5)",
+       "bw": "1px"
+      },
+      "svgSize": 24,
+      "ink": {
+       "w": 24,
+       "h": 21.375001907348633
+      },
+      "nameSize": "16px",
+      "nameColor": "rgb(245, 243, 234)",
+      "nameWhite": "nowrap"
+     },
+     {
+      "name": "Next.js",
+      "top": 1191,
+      "left": 208,
+      "h": 48,
+      "w": 172,
+      "tile": {
+       "w": 40,
+       "h": 40,
+       "radius": "10px",
+       "bg": "rgba(13, 23, 51, 0.6)",
+       "border": "rgba(37, 48, 100, 0.5)",
+       "bw": "1px"
+      },
+      "svgSize": 24,
+      "ink": {
+       "w": 24,
+       "h": 24
+      },
+      "nameSize": "16px",
+      "nameColor": "rgb(245, 243, 234)",
+      "nameWhite": "nowrap"
+     },
+     {
+      "name": "Tailwind CSS",
+      "top": 1251,
+      "left": 20,
+      "h": 48,
+      "w": 172,
+      "tile": {
+       "w": 40,
+       "h": 40,
+       "radius": "10px",
+       "bg": "rgba(13, 23, 51, 0.6)",
+       "border": "rgba(37, 48, 100, 0.5)",
+       "bw": "1px"
+      },
+      "svgSize": 30,
+      "ink": {
+       "w": 30,
+       "h": 17.999998331069946
+      },
+      "nameSize": "16px",
+      "nameColor": "rgb(245, 243, 234)",
+      "nameWhite": "nowrap"
+     }
+    ],
+    "divider": "1px rgb(37, 48, 100)",
+    "align": "normal"
+   },
+   {
+    "label": "Backend",
+    "rowTop": 1320.046875,
+    "rowH": 181,
+    "rowBottom": 1501.046875,
+    "labelLeft": 20,
+    "labelCenterDelta": 60.5,
+    "gridLeft": 20,
+    "items": [
+     {
+      "name": "Django",
+      "top": 1372,
+      "left": 20,
+      "h": 48,
+      "w": 172,
+      "tile": {
+       "w": 40,
+       "h": 40,
+       "radius": "10px",
+       "bg": "rgba(13, 23, 51, 0.6)",
+       "border": "rgba(37, 48, 100, 0.5)",
+       "bw": "1px"
+      },
+      "svgSize": 26,
+      "ink": {
+       "w": 20.180333614349365,
+       "h": 26
+      },
+      "nameSize": "16px",
+      "nameColor": "rgb(245, 243, 234)",
+      "nameWhite": "nowrap"
+     },
+     {
+      "name": "FastAPI",
+      "top": 1372,
+      "left": 208,
+      "h": 48,
+      "w": 172,
+      "tile": {
+       "w": 40,
+       "h": 40,
+       "radius": "10px",
+       "bg": "rgba(13, 23, 51, 0.6)",
+       "border": "rgba(37, 48, 100, 0.5)",
+       "bw": "1px"
+      },
+      "svgSize": 24,
+      "ink": {
+       "w": 24,
+       "h": 23.92259979248047
+      },
+      "nameSize": "16px",
+      "nameColor": "rgb(245, 243, 234)",
+      "nameWhite": "nowrap"
+     },
+     {
+      "name": "Celery",
+      "top": 1432,
+      "left": 20,
+      "h": 48,
+      "w": 172,
+      "tile": {
+       "w": 40,
+       "h": 40,
+       "radius": "10px",
+       "bg": "rgba(13, 23, 51, 0.6)",
+       "border": "rgba(37, 48, 100, 0.5)",
+       "bw": "1px"
+      },
+      "svgSize": 24,
+      "ink": {
+       "w": 24.000011444091797,
+       "h": 24.000011444091797
+      },
+      "nameSize": "16px",
+      "nameColor": "rgb(245, 243, 234)",
+      "nameWhite": "nowrap"
+     },
+     {
+      "name": "JWT",
+      "top": 1432,
+      "left": 208,
+      "h": 48,
+      "w": 172,
+      "tile": {
+       "w": 40,
+       "h": 40,
+       "radius": "10px",
+       "bg": "rgba(13, 23, 51, 0.6)",
+       "border": "rgba(37, 48, 100, 0.5)",
+       "bw": "1px"
+      },
+      "svgSize": 24,
+      "ink": {
+       "w": 23.95199966430664,
+       "h": 24
+      },
+      "nameSize": "16px",
+      "nameColor": "rgb(245, 243, 234)",
+      "nameWhite": "nowrap"
+     }
+    ],
+    "divider": "1px rgb(37, 48, 100)",
+    "align": "normal"
+   },
+   {
+    "label": "Data & AI",
+    "rowTop": 1501.046875,
+    "rowH": 181,
+    "rowBottom": 1682.046875,
+    "labelLeft": 20,
+    "labelCenterDelta": 60.5,
+    "gridLeft": 20,
+    "items": [
+     {
+      "name": "PostgreSQL",
+      "top": 1553,
+      "left": 20,
+      "h": 48,
+      "w": 172,
+      "tile": {
+       "w": 40,
+       "h": 40,
+       "radius": "10px",
+       "bg": "rgba(13, 23, 51, 0.6)",
+       "border": "rgba(37, 48, 100, 0.5)",
+       "bw": "1px"
+      },
+      "svgSize": 24,
+      "ink": {
+       "w": 23.1691837310791,
+       "h": 24.000003814697266
+      },
+      "nameSize": "16px",
+      "nameColor": "rgb(245, 243, 234)",
+      "nameWhite": "nowrap"
+     },
+     {
+      "name": "Redis",
+      "top": 1553,
+      "left": 208,
+      "h": 48,
+      "w": 172,
+      "tile": {
+       "w": 40,
+       "h": 40,
+       "radius": "10px",
+       "bg": "rgba(13, 23, 51, 0.6)",
+       "border": "rgba(37, 48, 100, 0.5)",
+       "bw": "1px"
+      },
+      "svgSize": 24,
+      "ink": {
+       "w": 23.999717712402344,
+       "h": 22.145999908447266
+      },
+      "nameSize": "16px",
+      "nameColor": "rgb(245, 243, 234)",
+      "nameWhite": "nowrap"
+     },
+     {
+      "name": "SQLAlchemy",
+      "top": 1613,
+      "left": 20,
+      "h": 48,
+      "w": 172,
+      "tile": {
+       "w": 40,
+       "h": 40,
+       "radius": "10px",
+       "bg": "rgba(13, 23, 51, 0.6)",
+       "border": "rgba(37, 48, 100, 0.5)",
+       "bw": "1px"
+      },
+      "svgSize": 36,
+      "ink": {
+       "w": 36.0000114440918,
+       "h": 12.42920207977295
+      },
+      "nameSize": "16px",
+      "nameColor": "rgb(245, 243, 234)",
+      "nameWhite": "nowrap"
+     },
+     {
+      "name": "LangGraph",
+      "top": 1613,
+      "left": 208,
+      "h": 48,
+      "w": 172,
+      "tile": {
+       "w": 40,
+       "h": 40,
+       "radius": "10px",
+       "bg": "rgba(13, 23, 51, 0.6)",
+       "border": "rgba(37, 48, 100, 0.5)",
+       "bw": "1px"
+      },
+      "svgSize": 28,
+      "ink": {
+       "w": 20.359498023986816,
+       "h": 28.000102361043297
+      },
+      "nameSize": "16px",
+      "nameColor": "rgb(245, 243, 234)",
+      "nameWhite": "nowrap"
+     }
+    ],
+    "divider": "1px rgb(37, 48, 100)",
+    "align": "normal"
+   },
+   {
+    "label": "Cloud & DevOps",
+    "rowTop": 1682.046875,
+    "rowH": 181,
+    "rowBottom": 1863.046875,
+    "labelLeft": 20,
+    "labelCenterDelta": 60.5,
+    "gridLeft": 20,
+    "items": [
+     {
+      "name": "Docker",
+      "top": 1734,
+      "left": 20,
+      "h": 48,
+      "w": 172,
+      "tile": {
+       "w": 40,
+       "h": 40,
+       "radius": "10px",
+       "bg": "rgba(13, 23, 51, 0.6)",
+       "border": "rgba(37, 48, 100, 0.5)",
+       "bw": "1px"
+      },
+      "svgSize": 28,
+      "ink": {
+       "w": 28.00002225240072,
+       "h": 20.09241803487142
+      },
+      "nameSize": "16px",
+      "nameColor": "rgb(245, 243, 234)",
+      "nameWhite": "nowrap"
+     },
+     {
+      "name": "AWS",
+      "top": 1734,
+      "left": 208,
+      "h": 48,
+      "w": 172,
+      "tile": {
+       "w": 40,
+       "h": 40,
+       "radius": "10px",
+       "bg": "rgba(13, 23, 51, 0.6)",
+       "border": "rgba(37, 48, 100, 0.5)",
+       "bw": "1px"
+      },
+      "svgSize": 30,
+      "ink": {
+       "w": 30.000497817993164,
+       "h": 18.019640922546387
+      },
+      "nameSize": "16px",
+      "nameColor": "rgb(245, 243, 234)",
+      "nameWhite": "nowrap"
+     },
+     {
+      "name": "GitHub Actions",
+      "top": 1794,
+      "left": 20,
+      "h": 48,
+      "w": 172,
+      "tile": {
+       "w": 40,
+       "h": 40,
+       "radius": "10px",
+       "bg": "rgba(13, 23, 51, 0.6)",
+       "border": "rgba(37, 48, 100, 0.5)",
+       "bw": "1px"
+      },
+      "svgSize": 24,
+      "ink": {
+       "w": 24,
+       "h": 24
+      },
+      "nameSize": "16px",
+      "nameColor": "rgb(245, 243, 234)",
+      "nameWhite": "nowrap"
+     },
+     {
+      "name": "Nginx",
+      "top": 1794,
+      "left": 208,
+      "h": 48,
+      "w": 172,
+      "tile": {
+       "w": 40,
+       "h": 40,
+       "radius": "10px",
+       "bg": "rgba(13, 23, 51, 0.6)",
+       "border": "rgba(37, 48, 100, 0.5)",
+       "bw": "1px"
+      },
+      "svgSize": 24,
+      "ink": {
+       "w": 20.790000915527344,
+       "h": 24
+      },
+      "nameSize": "16px",
+      "nameColor": "rgb(245, 243, 234)",
+      "nameWhite": "nowrap"
+     }
+    ],
+    "divider": "1px rgb(37, 48, 100)",
+    "align": "normal"
+   },
+   {
+    "label": "Tools",
+    "rowTop": 1863.046875,
+    "rowH": 181,
+    "rowBottom": 2044.046875,
+    "labelLeft": 20,
+    "labelCenterDelta": 60.5,
+    "gridLeft": 20,
+    "items": [
+     {
+      "name": "Git",
+      "top": 1915,
+      "left": 20,
+      "h": 48,
+      "w": 172,
+      "tile": {
+       "w": 40,
+       "h": 40,
+       "radius": "10px",
+       "bg": "rgba(13, 23, 51, 0.6)",
+       "border": "rgba(37, 48, 100, 0.5)",
+       "bw": "1px"
+      },
+      "svgSize": 24,
+      "ink": {
+       "w": 24.00022315979004,
+       "h": 24.00172233581543
+      },
+      "nameSize": "16px",
+      "nameColor": "rgb(245, 243, 234)",
+      "nameWhite": "nowrap"
+     },
+     {
+      "name": "GitHub",
+      "top": 1915,
+      "left": 208,
+      "h": 48,
+      "w": 172,
+      "tile": {
+       "w": 40,
+       "h": 40,
+       "radius": "10px",
+       "bg": "rgba(13, 23, 51, 0.6)",
+       "border": "rgba(37, 48, 100, 0.5)",
+       "bw": "1px"
+      },
+      "svgSize": 24,
+      "ink": {
+       "w": 24,
+       "h": 23.405736923217773
+      },
+      "nameSize": "16px",
+      "nameColor": "rgb(245, 243, 234)",
+      "nameWhite": "nowrap"
+     },
+     {
+      "name": "Postman",
+      "top": 1975,
+      "left": 20,
+      "h": 48,
+      "w": 172,
+      "tile": {
+       "w": 40,
+       "h": 40,
+       "radius": "10px",
+       "bg": "rgba(13, 23, 51, 0.6)",
+       "border": "rgba(37, 48, 100, 0.5)",
+       "bw": "1px"
+      },
+      "svgSize": 24,
+      "ink": {
+       "w": 23.99888038635254,
+       "h": 23.99962615966797
+      },
+      "nameSize": "16px",
+      "nameColor": "rgb(245, 243, 234)",
+      "nameWhite": "nowrap"
+     }
+    ],
+    "divider": "1px rgb(37, 48, 100)",
+    "align": "normal"
+   }
+  ],
+  "strip": {
+   "tiles": 42,
+   "anim": "marquee",
+   "dur": "42s",
+   "tileW": 40,
+   "tileBg": "rgba(13, 23, 51, 0.6)"
+  },
+  "accentVar": "250 204 21"
+ },
+ "consoleIssues": []
+}
