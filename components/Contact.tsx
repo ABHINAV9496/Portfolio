@@ -31,7 +31,6 @@ type Status = "idle" | "sending" | "sent" | "error";
 export default function Contact() {
   const [form, setForm] = useState({ name: "", email: "", message: "" });
   const [status, setStatus] = useState<Status>("idle");
-  const [phoneRevealed, setPhoneRevealed] = useState(false);
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -86,17 +85,10 @@ export default function Contact() {
         className="grid gap-10 lg:grid-cols-[1fr_1.2fr]"
       >
         <div className="space-y-4">
-          <motion.button
-            type="button"
+          <motion.a
             variants={fadeUp}
-            onClick={() => {
-              if (phoneRevealed) {
-                window.location.href = profile.phoneHref;
-              } else {
-                setPhoneRevealed(true);
-              }
-            }}
-            className="card-glow group flex w-full items-center gap-4 rounded-2xl p-4 text-left"
+            href={profile.phoneHref}
+            className="card-glow group flex items-center gap-4 rounded-2xl p-4"
           >
             <span className="grid h-11 w-11 shrink-0 place-items-center rounded-xl bg-accent/10 text-accent transition-transform group-hover:rotate-6 group-hover:scale-110">
               <Phone size={19} />
@@ -105,18 +97,11 @@ export default function Contact() {
               <span className="block text-xs uppercase tracking-wide text-subtle">
                 Phone
               </span>
-              <span className="block truncate text-sm text-primary">
-                {phoneRevealed ? (
-                  <span className="text-accent">
-                    {profile.phone}
-                    <span className="ml-2 text-[11px] text-subtle">tap to call</span>
-                  </span>
-                ) : (
-                  "Tap to reveal"
-                )}
+              <span className="block truncate text-sm text-accent">
+                {profile.phone}
               </span>
             </span>
-          </motion.button>
+          </motion.a>
 
           {channels.map((channel) => {
             const Icon = channel.icon;
