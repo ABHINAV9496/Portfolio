@@ -4,8 +4,7 @@ import { motion } from "framer-motion";
 import { ArrowUpRight, Download, Mail } from "lucide-react";
 import { GithubIcon, LinkedinIcon } from "./icons";
 import { fadeUp, slideLeft, staggerContainer } from "@/components/animations";
-import { profile, skillGroups } from "@/data/content";
-import { resolveSkillIcon } from "./skillIcons";
+import { profile, skills } from "@/data/content";
 import { useTypewriter } from "@/hooks/useTypewriter";
 
 const STACK_SHOWCASE = [
@@ -21,10 +20,9 @@ const STACK_SHOWCASE = [
 ];
 
 function StackShowcase() {
-  const tiles = skillGroups
-    .flatMap((group) => group.skills)
-    .filter((skill) => STACK_SHOWCASE.includes(skill.name))
-    .map((skill) => ({ skill, ...resolveSkillIcon(skill) }));
+  const tiles = STACK_SHOWCASE.map(
+    (name) => skills.find((skill) => skill.name === name)
+  ).filter((skill): skill is (typeof skills)[number] => Boolean(skill));
 
   return (
     <motion.div
@@ -50,7 +48,7 @@ function StackShowcase() {
           animate="show"
           className="grid grid-cols-3 gap-3 p-6"
         >
-          {tiles.map(({ skill, Icon, brand }, i) => (
+          {tiles.map((skill, i) => (
             <motion.div
               key={skill.name}
               variants={fadeUp}
@@ -58,10 +56,10 @@ function StackShowcase() {
               className="group/tile flex h-[96px] flex-col items-center justify-center gap-2 rounded-2xl border border-border/60 bg-[#0D1733]/60 p-2 transition-colors duration-200 hover:border-accent/60"
             >
               <span
-                style={{ color: brand }}
+                style={{ color: skill.color }}
                 className="grid place-items-center opacity-75 transition-opacity duration-200 group-hover/tile:opacity-100"
               >
-                <Icon
+                <skill.Icon
                   size={30}
                   className="transition-transform duration-200 group-hover/tile:scale-110"
                 />
