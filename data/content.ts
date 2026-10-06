@@ -30,104 +30,77 @@ export const navLinks = [
   { id: "contact", label: "Contact" },
 ];
 
+import type { IconType } from "react-icons";
+import { FaAws } from "react-icons/fa6";
+import {
+  SiCelery,
+  SiDjango,
+  SiDocker,
+  SiFastapi,
+  SiGithub,
+  SiGithubactions,
+  SiGit,
+  SiJavascript,
+  SiJsonwebtokens,
+  SiLangchain,
+  SiNextdotjs,
+  SiNginx,
+  SiPostgresql,
+  SiPostman,
+  SiPython,
+  SiReact,
+  SiRedis,
+  SiSqlalchemy,
+  SiTailwindcss,
+  SiTypescript,
+} from "react-icons/si";
+
+export const SKILL_CATEGORIES = [
+  "Languages",
+  "Frontend",
+  "Backend",
+  "Data & AI",
+  "Cloud & DevOps",
+  "Tools",
+] as const;
+
+export type SkillCategory = (typeof SKILL_CATEGORIES)[number];
+
 export type Skill = {
   name: string;
-  slug?: string;
-  fallback?: string;
+  category: SkillCategory;
+  Icon: IconType;
+  color: string;
+  scale?: number;
 };
 
-export type SkillGroup = { title: string; icon: string; skills: Skill[] };
+export const skills: Skill[] = [
+  { name: "Python", category: "Languages", Icon: SiPython, color: "#3776AB" },
+  { name: "TypeScript", category: "Languages", Icon: SiTypescript, color: "#3178C6" },
+  { name: "JavaScript", category: "Languages", Icon: SiJavascript, color: "#F7DF1E" },
 
-export const skillGroups: SkillGroup[] = [
-  {
-    title: "Languages",
-    icon: "Code2",
-    skills: [
-      { name: "Python", slug: "python" },
-      { name: "TypeScript", slug: "typescript" },
-      { name: "JavaScript", slug: "javascript" },
-      { name: "SQL", fallback: "Database" },
-    ],
-  },
-  {
-    title: "Frontend",
-    icon: "Layout",
-    skills: [
-      { name: "React.js", slug: "react" },
-      { name: "Next.js", slug: "nextjs" },
-      { name: "Tailwind CSS", slug: "tailwindcss" },
-      { name: "Vite", slug: "vite" },
-      { name: "Leaflet", slug: "leaflet" },
-      { name: "Axios", slug: "axios" },
-    ],
-  },
-  {
-    title: "Backend",
-    icon: "Server",
-    skills: [
-      { name: "Django", slug: "django" },
-      { name: "Django REST Framework", slug: "django" },
-      { name: "FastAPI", slug: "fastapi" },
-      { name: "SQLAlchemy", fallback: "Database" },
-      { name: "Celery", slug: "celery" },
-      { name: "WebSockets", fallback: "Waypoints" },
-    ],
-  },
-  {
-    title: "Database",
-    icon: "Database",
-    skills: [
-      { name: "PostgreSQL", slug: "postgresql" },
-      { name: "PostGIS", slug: "postgresql" },
-      { name: "pgvector", slug: "postgresql" },
-      { name: "Redis", slug: "redis" },
-    ],
-  },
-  {
-    title: "Security & Auth",
-    icon: "Lock",
-    skills: [
-      { name: "JWT / OAuth2", fallback: "Lock" },
-      { name: "RBAC", fallback: "Shield" },
-      { name: "MFA", fallback: "KeyRound" },
-      { name: "Google Auth", slug: "google" },
-    ],
-  },
-  {
-    title: "AI & ML",
-    icon: "BrainCircuit",
-    skills: [
-      { name: "Groq / Llama 3.3", fallback: "Sparkles" },
-      { name: "RAG (pgvector)", slug: "postgresql" },
-      { name: "LLM Agents", fallback: "Network" },
-      { name: "LangGraph", fallback: "GitBranch" },
-      { name: "Prompt Engineering", fallback: "Terminal" },
-    ],
-  },
-  {
-    title: "Cloud & DevOps",
-    icon: "CloudCog",
-    skills: [
-      { name: "Docker", slug: "docker" },
-      { name: "AWS (EC2, RDS)", fallback: "Cloud" },
-      { name: "GitHub Actions", slug: "githubactions" },
-      { name: "CI/CD", fallback: "Rocket" },
-      { name: "Nginx", slug: "nginx" },
-      { name: "Git", slug: "git" },
-    ],
-  },
-  {
-    title: "Tools & Architecture",
-    icon: "Boxes",
-    skills: [
-      { name: "Swagger (drf-spectacular)", slug: "swagger" },
-      { name: "Razorpay", slug: "razorpay" },
-      { name: "Postman", slug: "postman" },
-      { name: "Microservices", fallback: "Server" },
-      { name: "Django Channels", fallback: "Zap" },
-      { name: "REST API Design", fallback: "Braces" },
-    ],
-  },
+  { name: "React.js", category: "Frontend", Icon: SiReact, color: "#61DAFB" },
+  { name: "Next.js", category: "Frontend", Icon: SiNextdotjs, color: "currentColor" },
+  { name: "Tailwind CSS", category: "Frontend", Icon: SiTailwindcss, color: "#06B6D4", scale: 1.25 },
+
+  { name: "Django", category: "Backend", Icon: SiDjango, color: "currentColor", scale: 1.1 },
+  { name: "FastAPI", category: "Backend", Icon: SiFastapi, color: "#009688" },
+  { name: "Celery", category: "Backend", Icon: SiCelery, color: "#37814A" },
+  { name: "JWT", category: "Backend", Icon: SiJsonwebtokens, color: "currentColor" },
+
+  { name: "PostgreSQL", category: "Data & AI", Icon: SiPostgresql, color: "#4169E1" },
+  { name: "Redis", category: "Data & AI", Icon: SiRedis, color: "#FF4438" },
+  { name: "SQLAlchemy", category: "Data & AI", Icon: SiSqlalchemy, color: "#D71F00", scale: 1.5 },
+  { name: "LangGraph", category: "Data & AI", Icon: SiLangchain, color: "currentColor", scale: 1.15 },
+
+  { name: "Docker", category: "Cloud & DevOps", Icon: SiDocker, color: "#2496ED", scale: 1.15 },
+  { name: "AWS", category: "Cloud & DevOps", Icon: FaAws, color: "#FF9900", scale: 1.25 },
+  { name: "GitHub Actions", category: "Cloud & DevOps", Icon: SiGithubactions, color: "#2088FF" },
+  { name: "Nginx", category: "Cloud & DevOps", Icon: SiNginx, color: "#009639" },
+
+  { name: "Git", category: "Tools", Icon: SiGit, color: "#F05032" },
+  { name: "GitHub", category: "Tools", Icon: SiGithub, color: "currentColor" },
+  { name: "Postman", category: "Tools", Icon: SiPostman, color: "#FF6C37" },
 ];
 
 export type Experience = {
