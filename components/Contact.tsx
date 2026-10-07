@@ -53,6 +53,8 @@ export default function Contact() {
           to_name: "Abhinav",
           from_name: form.name,
           reply_to: form.email,
+          email: form.email,
+          from_email: form.email,
           message: form.message,
         },
         { publicKey: PUBLIC_KEY! }
