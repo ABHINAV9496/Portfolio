@@ -3,7 +3,6 @@
 import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { Menu, X } from "lucide-react";
-import ThemeToggle from "./ThemeToggle";
 import { useActiveSection } from "@/hooks/useActiveSection";
 import { navLinks } from "@/data/content";
 import { cn } from "@/lib/utils";
@@ -57,13 +56,9 @@ export default function Navbar() {
               {link.label}
             </a>
           ))}
-          <div className="ml-2">
-            <ThemeToggle />
-          </div>
         </div>
 
         <div className="flex items-center gap-2 md:hidden">
-          <ThemeToggle />
           <button
             type="button"
             onClick={() => setOpen((v) => !v)}
