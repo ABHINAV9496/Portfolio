@@ -131,6 +131,7 @@ export default function ProjectCard({
           {project.caseStudy ? (
             <Link
               href={project.caseStudy}
+              prefetch
               className="group/link inline-flex items-center gap-1.5 text-xs font-semibold text-accent transition-colors hover:text-accent"
             >
               Read case study
