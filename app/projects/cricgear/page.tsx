@@ -6,6 +6,7 @@ export const metadata: Metadata = {
   title: "CricGear — Case Study",
   description:
     "How CricGear ships a production e-commerce storefront and API — a Django + DRF backend on AWS EC2 with PostgreSQL on RDS, JWT auth and role-based access, served by a React.js frontend.",
+  alternates: { canonical: "/projects/cricgear" },
 };
 
 const project = projects.find((p) => p.slug === "cricgear")!;

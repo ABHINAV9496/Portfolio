@@ -6,6 +6,7 @@ export const metadata: Metadata = {
   title: "EcoCharge — Case Study",
   description:
     "How EcoCharge solves EV trip planning: a concurrent-safe reservation engine, a geospatial data pipeline across 400+ cities, and an AI copilot served from a FastAPI microservice.",
+  alternates: { canonical: "/projects/ecocharge" },
 };
 
 const project = projects.find((p) => p.slug === "ecocharge")!;

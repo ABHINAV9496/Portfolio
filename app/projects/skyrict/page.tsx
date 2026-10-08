@@ -6,6 +6,7 @@ export const metadata: Metadata = {
   title: "Skyrict — Case Study",
   description:
     "How Skyrict ships an AI-native, multi-tenant ERP platform: a FastAPI identity microservice, an event-driven ERP core, and a provider-agnostic AI agent service behind a Next.js 15 BFF — built by a 4-person team.",
+  alternates: { canonical: "/projects/skyrict" },
 };
 
 const project = projects.find((p) => p.slug === "skyrict")!;
