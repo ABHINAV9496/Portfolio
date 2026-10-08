@@ -14,7 +14,7 @@ export default function Projects() {
     <Section id="projects">
       <SectionHeading
         index="04"
-        eyebrow="projects"
+        eyebrow="Projects"
         title="Featured"
         accent="work"
         description="Production-minded builds — end-to-end systems from database to deployment."

@@ -18,7 +18,7 @@ export default function Skills() {
     <Section id="skills">
       <SectionHeading
         index="02"
-        eyebrow="skills"
+        eyebrow="Skills"
         title="My"
         accent="tech stack"
         description="Languages, frameworks, and infrastructure I reach for every day."

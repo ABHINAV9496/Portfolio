@@ -73,7 +73,7 @@ export default function Contact() {
     <Section id="contact">
       <SectionHeading
         index="06"
-        eyebrow="contact"
+        eyebrow="Contact"
         title="Let's build"
         accent="something"
         description="Have a project, role, or idea in mind? My inbox is always open."

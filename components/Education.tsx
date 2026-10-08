@@ -12,7 +12,7 @@ export default function Education() {
     <Section id="education">
       <SectionHeading
         index="05"
-        eyebrow="education"
+        eyebrow="Education"
         title="My"
         accent="education"
         description="The academic background behind my engineering mindset."

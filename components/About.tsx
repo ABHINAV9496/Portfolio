@@ -8,16 +8,17 @@ import { profile } from "@/data/content";
 
 const banner = {
   label: "THE ENGINEER BEHIND THE CODE",
-  headline: "I'm a backend developer who sweats the details that keep systems",
-  headlineAccent: "fast, safe and correct.",
+  headline: "I BUILD BACKEND SYSTEMS THAT ARE",
+  headlineAccent: "FAST, RELIABLE, AND BUILT TO SCALE.",
   subline:
-    "Python and PostgreSQL from schema to deployment: clean contracts, tested code, and systems that hold up under load.",
+    "Python, Django, FastAPI, and PostgreSQL — from API design to deployment, I build clean, scalable systems designed for real-world use.",
   signature: "— ABHINAV A",
 };
 
 const paragraphs = [
-  "I started on the **production floor** as a mechanical engineering trainee at Bajaj Auto in Pune, tracking line metrics and diagnosing faults under time-critical conditions. That taught me something software hasn't changed: systems break in predictable ways, and the fix is discipline, not heroics.",
-  "That mindset carried into code. At Bridgeon Solutions I build and maintain **production REST APIs** with Django and DRF, and I've cut response times by eliminating N+1 patterns. On **Skyrict**, a four-person ERP team, I own the Inventory & Warehouse module: per-tenant isolation through PostgreSQL Row-Level Security, an immutable stock-movement ledger, and AI restock suggestions that a human approves before anything moves.",
+  "I started on the **production floor** as a Mechanical Engineering Trainee at Bajaj Auto in Pune, tracking line metrics and diagnosing faults under time-critical conditions. That taught me something software hasn't changed: systems break in predictable ways, and the fix is discipline, not heroics.",
+
+  "That mindset carried into software. At Bridgeon Solutions, I build and maintain **production REST APIs** with Django and Django REST Framework, and I've improved response times by eliminating N+1 query patterns. At **Skyrict**, a four-person ERP team, I own the Inventory & Warehouse module: implementing per-tenant isolation through PostgreSQL Row-Level Security, maintaining an immutable stock-movement ledger, and building AI-assisted restock suggestions that require human approval before inventory actions are taken."
 ];
 
 const pillFacts = [
@@ -70,7 +71,7 @@ export default function About() {
       <Reveal>
         <p className="font-mono text-sm">
           <span className="text-subtle">01.</span>
-          <span className="text-accent">{" // about"}</span>
+          <span className="text-accent">{" // About"}</span>
         </p>
       </Reveal>
 

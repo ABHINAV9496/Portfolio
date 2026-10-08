@@ -13,7 +13,7 @@ export default function Experience() {
     <Section id="experience">
       <SectionHeading
         index="03"
-        eyebrow="experience"
+        eyebrow="Experience"
         title="Where I've"
         accent="worked"
         description="From high-volume manufacturing to production web apps."
