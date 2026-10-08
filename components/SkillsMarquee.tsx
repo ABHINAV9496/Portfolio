@@ -1,8 +1,23 @@
+"use client";
+
+import { useEffect, useRef } from "react";
 import { skills, type Skill } from "@/data/content";
 import SkillLogo from "./SkillLogo";
 
 export default function SkillsMarquee() {
+  const ref = useRef<HTMLDivElement>(null);
   const items = skills;
+
+  useEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+    const observer = new IntersectionObserver(
+      ([entry]) => el.classList.toggle("marquee-off", !entry.isIntersecting),
+      { rootMargin: "100px 0px" }
+    );
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, []);
 
   const logoItem = (skill: Skill, i: number | string, hidden?: boolean) => (
     <li key={i} aria-hidden={hidden || undefined} className="mx-3">
@@ -11,7 +26,10 @@ export default function SkillsMarquee() {
   );
 
   return (
-    <div className="marquee-paused relative mt-12 mb-4 overflow-hidden border-y border-border/40 py-4">
+    <div
+      ref={ref}
+      className="marquee-paused relative mt-12 mb-4 overflow-hidden border-y border-border/40 py-4"
+    >
       <ul className="marquee-track items-center">
         {items.map((entry, i) => logoItem(entry, i))}
         {items.map((entry, i) => logoItem(entry, `dup-${i}`, true))}
