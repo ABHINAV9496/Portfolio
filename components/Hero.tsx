@@ -19,6 +19,16 @@ const STACK_SHOWCASE = [
   "Tailwind CSS",
 ];
 
+function TypedRole() {
+  const typed = useTypewriter(profile.roles, { startDelay: 1100 });
+  return (
+    <>
+      <span className="text-accent">&gt;</span> {typed}
+      <span className="animate-caret ml-0.5 inline-block h-5 w-[2px] translate-y-1 bg-accent" />
+    </>
+  );
+}
+
 function StackShowcase() {
   const tiles = STACK_SHOWCASE.map(
     (name) => skills.find((skill) => skill.name === name)
@@ -87,7 +97,6 @@ function StackShowcase() {
 }
 
 export default function Hero() {
-  const typed = useTypewriter(profile.roles, { startDelay: 1100 });
   const nameWords = profile.name.split(" ");
 
   return (
@@ -151,8 +160,7 @@ export default function Hero() {
             custom={0.4}
             className="mt-6 font-mono text-lg text-secondary md:text-xl"
           >
-            <span className="text-accent">&gt;</span> {typed}
-            <span className="animate-caret ml-0.5 inline-block h-5 w-[2px] translate-y-1 bg-accent" />
+            <TypedRole />
           </motion.p>
 
           <motion.p
