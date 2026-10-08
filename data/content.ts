@@ -7,7 +7,7 @@ export const profile = {
   phoneHref: "tel:+919496247873",
   linkedin: "https://www.linkedin.com/in/abhinav-a-934696202",
   github: "https://github.com/ABHINAV9496",
-  availability: "Open to full-time roles and freelance opportunities.",
+  availability: "Open To Full-time Roles And Freelance Opportunities.",
   heroLead:
     "I'm Abhinav — a Python full-stack developer. I design clean REST APIs with Django & FastAPI, optimize Postgres and Redis performance, and ship real-time & AI-powered features from database schema to deployment.",
   summary:
@@ -32,6 +32,7 @@ export const navLinks = [
 
 import type { IconType } from "react-icons";
 import { FaAws } from "react-icons/fa6";
+import { Boxes, Network, Radio, FileSearch, MessageSquareCode, type LucideIcon } from "lucide-react";
 import {
   SiCelery,
   SiDjango,
@@ -43,6 +44,7 @@ import {
   SiJavascript,
   SiJsonwebtokens,
   SiLangchain,
+  SiLanggraph,
   SiNextdotjs,
   SiNginx,
   SiPostgresql,
@@ -59,7 +61,8 @@ export const SKILL_CATEGORIES = [
   "Languages",
   "Frontend",
   "Backend",
-  "Data & AI",
+  "Database",
+  "AI & ML",
   "Cloud & DevOps",
   "Tools",
 ] as const;
@@ -69,7 +72,7 @@ export type SkillCategory = (typeof SKILL_CATEGORIES)[number];
 export type Skill = {
   name: string;
   category: SkillCategory;
-  Icon: IconType;
+  Icon: IconType | LucideIcon;
   color: string;
   scale?: number;
 };
@@ -87,15 +90,22 @@ export const skills: Skill[] = [
   { name: "FastAPI", category: "Backend", Icon: SiFastapi, color: "#009688" },
   { name: "Celery", category: "Backend", Icon: SiCelery, color: "#37814A" },
   { name: "JWT", category: "Backend", Icon: SiJsonwebtokens, color: "currentColor" },
+  { name: "Microservices", category: "Backend", Icon: Boxes, color: "currentColor" },
+  { name: "REST APIs", category: "Backend", Icon: Network, color: "currentColor" },
+  { name: "WebSockets", category: "Backend", Icon: Radio, color: "currentColor" },
 
-  { name: "PostgreSQL", category: "Data & AI", Icon: SiPostgresql, color: "#4169E1" },
-  { name: "Redis", category: "Data & AI", Icon: SiRedis, color: "#FF4438" },
-  { name: "SQLAlchemy", category: "Data & AI", Icon: SiSqlalchemy, color: "#D71F00", scale: 1.5 },
-  { name: "LangGraph", category: "Data & AI", Icon: SiLangchain, color: "currentColor", scale: 1.15 },
+  { name: "PostgreSQL", category: "Database", Icon: SiPostgresql, color: "#4169E1" },
+  { name: "Redis", category: "Database", Icon: SiRedis, color: "#FF4438" },
+  { name: "SQLAlchemy", category: "Database", Icon: SiSqlalchemy, color: "#D71F00", scale: 1.5 },
+
+  { name: "RAG", category: "AI & ML", Icon: FileSearch, color: "currentColor" },
+  { name: "LangChain", category: "AI & ML", Icon: SiLangchain, color: "currentColor", scale: 1.15 },
+  { name: "LangGraph", category: "AI & ML", Icon: SiLanggraph, color: "currentColor", scale: 1.15 },
+  { name: "Prompt Engineering", category: "AI & ML", Icon: MessageSquareCode, color: "currentColor" },
 
   { name: "Docker", category: "Cloud & DevOps", Icon: SiDocker, color: "#2496ED", scale: 1.15 },
   { name: "AWS", category: "Cloud & DevOps", Icon: FaAws, color: "#FF9900", scale: 1.25 },
-  { name: "GitHub Actions", category: "Cloud & DevOps", Icon: SiGithubactions, color: "#2088FF" },
+  { name: "CI/CD", category: "Cloud & DevOps", Icon: SiGithubactions, color: "#2088FF" },
   { name: "Nginx", category: "Cloud & DevOps", Icon: SiNginx, color: "#009639" },
 
   { name: "Git", category: "Tools", Icon: SiGit, color: "#F05032" },
@@ -121,9 +131,10 @@ export const experience: Experience[] = [
     period: "Sep 2025 — Present",
     current: true,
     highlights: [
-      "Engineer RESTful APIs with Django and DRF for live production modules, enforcing JWT auth, role-based access, and input validation.",
-      "Eliminate N+1 query patterns with select_related / prefetch_related, cutting API response times.",
-      "Verify API flows end-to-end in Postman before release and run background jobs, caching, and containerization with Celery, Redis, and Docker.",
+      "Ship production REST APIs end-to-end with Django REST Framework — Models, Serializers, Permissions, and Postman-verified releases; services containerized with Docker.",
+      "Architect secure access with JWT authentication, role-based permissions, and strict input validation across live production modules.",
+      "Eliminate N+1 query patterns with select_related / prefetch_related to cut API response times; offload background work to Celery and cache hot reads in Redis.",
+      "Deliver in a structured Agile/Scrum workflow — Sprint Planning, Daily standups, and PR-based code reviews.",
     ],
   },
   {
@@ -131,9 +142,10 @@ export const experience: Experience[] = [
     company: "Bajaj Auto Pvt Ltd",
     location: "Pune, India",
     period: "Dec 2021 — Dec 2022",
-    kind: "pre-software",
     highlights: [
-      "Tracked production-line metrics and diagnosed mechanical faults in a high-volume manufacturing environment.",
+      "Built vehicles on a high-volume assembly line, executing fitment and assembly to exact SOP, torque, and spec requirements to hit daily build targets.",
+      "Ran in-line quality inspections and root-cause diagnosis, catching defects before they reached the next station to protect throughput and product quality.",
+      "Worked to tight takt times with disciplined shift handovers, 5S, and safety standards in a zero-tolerance manufacturing environment.",
     ],
   },
 ];
@@ -156,7 +168,7 @@ export const projects: Project[] = [
     title: "Skyrict",
     slug: "skyrict",
     tagline:
-      "AI-native, multi-tenant ERP platform — identity, operations, finance, and an AI agent core in one event-driven monorepo, built by a 4-person team.",
+      "An AI-native, multi-tenant ERP — identity, operations, finance, and an AI agent core in one event-driven monorepo that treats each company as a node in a live market.",
     github: "https://github.com/nkswalih/skyrict",
     live: "https://skyrict.in/",
     badge: "Group Project",
