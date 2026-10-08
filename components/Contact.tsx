@@ -8,7 +8,6 @@ import Section from "./Section";
 import SectionHeading from "./SectionHeading";
 import { fadeUp, staggerContainer, viewportOnce } from "@/components/animations";
 import { profile } from "@/data/content";
-import { send } from "@emailjs/browser";
 
 const SERVICE_ID = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID;
 const TEMPLATE_ID = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID;
@@ -46,6 +45,7 @@ export default function Contact() {
 
     setStatus("sending");
     try {
+      const { send } = await import("@emailjs/browser");
       await send(
         SERVICE_ID!,
         TEMPLATE_ID!,
