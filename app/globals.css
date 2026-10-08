@@ -60,9 +60,8 @@
 
 @layer components {
   .glass {
-    background-color: rgb(var(--card) / 0.55);
+    background-color: rgb(var(--card) / 0.85);
     border: 1px solid rgb(var(--border) / 0.7);
-    backdrop-filter: blur(14px);
   }
 
   .pill {
@@ -90,8 +89,7 @@
 
   .card-glow {
     border: 1px solid rgb(var(--border) / 0.7);
-    background-color: rgb(var(--card) / 0.55);
-    backdrop-filter: blur(14px);
+    background-color: rgb(var(--card) / 0.85);
     transition:
       border-color 0.3s,
       box-shadow 0.3s,
@@ -174,6 +172,10 @@
   }
 
   .marquee-paused:hover .marquee-track {
+    animation-play-state: paused;
+  }
+
+  .marquee-off .marquee-track {
     animation-play-state: paused;
   }
 
